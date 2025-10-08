@@ -8,7 +8,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Import the function to get the DataFrame
-from stations_df_func_original import get_stations_df
+from stations_df_func import get_stations_df
 
 # --- Streamlit page setup ---
 st.set_page_config(
