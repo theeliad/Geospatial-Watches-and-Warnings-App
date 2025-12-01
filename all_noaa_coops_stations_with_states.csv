@@ -1,0 +1,303 @@
+station_id,station_name,station_type,latitude,longitude,state,supports_water_level
+1611400,Nawiliwili,Unknown,21.9544,-159.3561,Hawaii,False
+1612340,Honolulu,Unknown,21.303333,-157.86453,Hawaii,False
+1612401,Pearl Harbor,Unknown,21.3675,-157.9639,Hawaii,False
+1612480,Mokuoloe,Unknown,21.433056,-157.79,Hawaii,False
+1615680,"Kahului, Kahului Harbor",Unknown,20.894945,-156.469,Hawaii,False
+1617433,Kawaihae,Unknown,20.0366,-155.8294,Hawaii,False
+1617760,"Hilo, Hilo Bay, Kuhio Bay",Unknown,19.730278,-155.05556,Hawaii,False
+1619910,"Sand Island, Midway Islands",Unknown,28.211666,-177.36,Hawaii,False
+1630000,"Apra Harbor, Guam",Unknown,13.443389,144.65636,Hawaii,False
+1631428,"Pago Bay, Guam",Unknown,13.428333,144.79889,Hawaii,False
+1770000,"Pago Pago, American Samoa",Unknown,-14.28,-170.69,Hawaii,False
+1820000,"Kwajalein, Marshall Islands",Unknown,8.731667,167.73611,Hawaii,False
+1890000,"Wake Island, Pacific Ocean",Unknown,19.290556,166.6175,Hawaii,False
+2695535,Bermuda Biological Station,Unknown,32.37,-64.695,Rhode Island,False
+2695540,"Bermuda, St. Georges Island",Unknown,32.3734,-64.7033,Rhode Island,False
+8311030,Ogdensburg,Unknown,44.702778,-75.494446,New York,False
+8311062,Alexandria Bay,Unknown,44.33111,-75.934525,New York,False
+8410140,Eastport,Unknown,44.90461,-66.98289,Maine,False
+8411060,Cutler Farris Wharf,Unknown,44.6567,-67.21,Maine,False
+8413320,Bar Harbor,Unknown,44.392193,-68.20428,Maine,False
+8418150,Portland,Unknown,43.658054,-70.24416,New Hampshire,False
+8419870,Seavey Island,Unknown,43.079723,-70.74111,New Hampshire,False
+8443970,Boston,Unknown,42.35389,-71.05028,Massachusetts,False
+8447386,Fall River,Unknown,41.7043,-71.1641,Rhode Island,False
+8447435,Chatham,Unknown,41.6885,-69.9511,Rhode Island,False
+8447636,New Bedford Harbor,Unknown,41.6212,-70.9137,Rhode Island,False
+8447930,Woods Hole,Unknown,41.523613,-70.67111,Rhode Island,False
+8449130,Nantucket Island,Unknown,41.285,-70.0967,Rhode Island,False
+8452660,Newport,Unknown,41.504333,-71.32614,Rhode Island,False
+8452944,Conimicut Light,Unknown,41.7167,-71.3433,Rhode Island,False
+8454000,Providence,Unknown,41.807167,-71.400665,Rhode Island,False
+8454049,Quonset Point,Unknown,41.5868,-71.411,Rhode Island,False
+8461490,New London,Unknown,41.371666,-72.09556,Rhode Island,False
+8465705,New Haven,Unknown,41.2833,-72.9083,Connecticut,False
+8467150,Bridgeport,Unknown,41.17582,-73.18397,Connecticut,False
+8510560,Montauk,Unknown,41.048332,-71.95944,Rhode Island,False
+8516945,Kings Point,Unknown,40.8103,-73.7649,New Jersey,False
+8518750,The Battery,Unknown,40.700554,-74.01417,New Jersey,False
+8518962,Turkey Point Hudson River NERRS,Unknown,42.0139,-73.9392,Connecticut,False
+8518979,"Coxsackie, Hudson River",Unknown,42.35264,-73.79486,Connecticut,False
+8531680,Sandy Hook,Unknown,40.4669,-74.0094,New Jersey,False
+8534720,Atlantic City,Unknown,39.356667,-74.41805,New Jersey,False
+8536110,Cape May,Unknown,38.9683,-74.96,Delaware,False
+8537121,Ship John Shoal,Unknown,39.30539,-75.37668,Delaware,False
+8539094,"Burlington, Delaware River",Unknown,40.0817,-74.8697,New Jersey,False
+8540433,Marcus Hook,Unknown,39.811806,-75.4095,New Jersey,False
+8545240,Philadelphia,Unknown,39.933056,-75.14198,New Jersey,False
+8546252,Bridesburg,Unknown,39.979683,-75.079315,New Jersey,False
+8548989,Newbold,Unknown,40.137333,-74.75183,New Jersey,False
+8551762,Delaware City,Unknown,39.582195,-75.588974,Delaware,False
+8551910,Reedy Point,Unknown,39.558334,-75.571945,Delaware,False
+8555889,Brandywine Shoal Light,Unknown,38.986668,-75.113335,Delaware,False
+8557380,Lewes,Unknown,38.782833,-75.11928,Delaware,False
+8570283,Ocean City Inlet,Unknown,38.32833,-75.09167,Delaware,False
+8571421,Bishops Head,Unknown,38.22,-76.0383,Delaware,False
+8571892,Cambridge,Unknown,38.5725,-76.06167,Delaware,False
+8573364,Tolchester Beach,Unknown,39.213444,-76.24455,Maryland,False
+8573927,Chesapeake City,Unknown,39.52667,-75.81,Delaware,False
+8574680,Baltimore,Unknown,39.2667,-76.5783,Maryland,False
+8575512,Annapolis,Unknown,38.983883,-76.480034,Maryland,False
+8577330,Solomons Island,Unknown,38.3167,-76.4517,Maryland,False
+8594900,Washington,Unknown,38.873333,-77.02167,Maryland,False
+8631044,Wachapreague,Unknown,37.607777,-75.68584,Delaware,False
+8632200,Kiptopeke,Unknown,37.1652,-75.9884,Delaware,False
+8635027,Dahlgren,Unknown,38.31975,-77.0366,Maryland,False
+8635750,Lewisetta,Unknown,37.9961,-76.4644,Maryland,False
+8636580,Windmill Point,Unknown,37.6155,-76.28978,Delaware,False
+8637689,Yorktown USCG Training Center,Unknown,37.2265,-76.478806,Virginia,False
+8638610,Sewells Point,Unknown,36.94278,-76.32861,Virginia,False
+8638901,"CBBT, Chesapeake Channel",Unknown,37.0329,-76.0833,Delaware,False
+8639348,Money Point,Unknown,36.778194,-76.301865,Virginia,False
+8651370,Duck,Unknown,36.1833,-75.7467,Virginia,False
+8652587,Oregon Inlet Marina,Unknown,35.795696,-75.548195,North Carolina,False
+8654467,USCG Station Hatteras,Unknown,35.20861,-75.70419,North Carolina,False
+8656483,"Beaufort, Duke Marine Lab",Unknown,34.71733,-76.67066,North Carolina,False
+8658120,Wilmington,Unknown,34.2267,-77.9533,North Carolina,False
+8658163,Wrightsville Beach,Unknown,34.213306,-77.7867,North Carolina,False
+8661070,Springmaid Pier,Unknown,33.655,-78.9183,South Carolina,False
+8665530,Charleston,Unknown,32.780834,-79.923615,South Carolina,False
+8670870,Fort Pulaski,Unknown,32.034695,-80.90303,Georgia,False
+8679598,Kings Bay MSF Pier,Unknown,30.7781,-81.4914,Georgia,False
+8720030,Fernandina Beach,Unknown,30.671356,-81.46584,Georgia,False
+8720218,Mayport (Bar Pilots Dock),Unknown,30.398167,-81.42789,Georgia,False
+8720219,Dames Point,Unknown,30.3867,-81.5583,Georgia,False
+8720226,"Southbank Riverwalk, St Johns River",Unknown,30.32,-81.6583,Georgia,False
+8720357,I-295 Buckman Bridge,Unknown,30.192417,-81.68889,Georgia,False
+8721604,"Trident Pier, Port Canaveral",Unknown,28.4158,-80.5931,Florida,False
+8722670,"Lake Worth Pier, Atlantic Ocean",Unknown,26.612778,-80.034164,Florida,False
+8722956,South Port Everglades,Unknown,26.081667,-80.11667,Florida,False
+8723214,Virginia Key,Unknown,25.7314,-80.1618,Florida,False
+8723970,"Vaca Key, Florida Bay",Unknown,24.711,-81.1065,Florida,False
+8724580,Key West,Unknown,24.5557,-81.8079,Florida,False
+8725114,"NAPLES BAY, NORTH",Unknown,26.1367,-81.7883,Florida,False
+8725520,Fort Myers,Unknown,26.647778,-81.87111,Florida,False
+8726384,Port Manatee,Unknown,27.6387,-82.5621,Florida,False
+8726520,St. Petersburg,Unknown,27.7606,-82.6269,Florida,False
+8726607,Old Port Tampa,Unknown,27.8578,-82.5528,Florida,False
+8726674,East Bay,Unknown,27.9231,-82.4214,Florida,False
+8726724,Clearwater Beach,Unknown,27.978333,-82.831665,Florida,False
+8727520,Cedar Key,Unknown,29.135,-83.0317,Florida,False
+8728690,Apalachicola,Unknown,29.724445,-84.98055,Georgia,False
+8729108,Panama City,Unknown,30.149723,-85.664444,Alabama,False
+8729210,Panama City Beach,Unknown,30.21375,-85.878586,Alabama,False
+8729840,Pensacola,Unknown,30.4044,-87.2112,Alabama,False
+8735180,Dauphin Island,Unknown,30.25,-88.075,Alabama,False
+8735391,Dog River Bridge,Unknown,30.5652,-88.088,Alabama,False
+8735523,East Fowl River Bridge,Unknown,30.4437,-88.1139,Alabama,False
+8736897,Coast Guard Sector Mobile,Unknown,30.6495,-88.05811,Alabama,False
+8737048,Mobile State Docks,Unknown,30.70461,-88.03961,Alabama,False
+8737138,Chickasaw Creek,Unknown,30.7819,-88.0736,Alabama,False
+8738043,West Fowl River Bridge,Unknown,30.3766,-88.1586,Alabama,False
+8739803,Bayou La Batre Bridge,Unknown,30.4057,-88.2477,Mississippi,False
+8741533,Pascagoula NOAA Lab,Unknown,30.367777,-88.56306,Mississippi,False
+8747437,Bay Waveland Yacht Club,Unknown,30.326342,-89.3258,Mississippi,False
+8760721,Pilottown,Unknown,29.179306,-89.258835,Louisiana,False
+8760922,"Pilots Station East, S.W. Pass",Unknown,28.9322,-89.4075,Louisiana,False
+8761305,Shell Beach,Unknown,29.86811,-89.67325,Louisiana,False
+8761724,Grand Isle,Unknown,29.263334,-89.956665,Louisiana,False
+8761927,New Canal Station,Unknown,30.027222,-90.113335,Louisiana,False
+8761955,Carrollton,Unknown,29.932888,-90.135475,Louisiana,False
+8762075,"Port Fourchon, Belle Pass",Unknown,29.1142,-90.1993,Louisiana,False
+8762482,"West Bank 1, Bayou Gauche",Unknown,29.78861,-90.42028,Louisiana,False
+8764044,"Berwick, Atchafalaya River",Unknown,29.6675,-91.23761,Louisiana,False
+8764227,"LAWMA, Amerada Pass",Unknown,29.4496,-91.3381,Louisiana,False
+8764314,"Eugene Island, North of, Atchafalaya Bay",Unknown,29.3675,-91.3839,Louisiana,False
+8766072,Freshwater Canal Locks,Unknown,29.551695,-92.30519,Louisiana,False
+8767816,Lake Charles,Unknown,30.223612,-93.221664,Louisiana,False
+8767961,Bulk Terminal,Unknown,30.1903,-93.3007,Louisiana,False
+8768094,Calcasieu Pass,Unknown,29.768167,-93.34289,Louisiana,False
+8770475,Port Arthur,Unknown,29.8667,-93.93,Louisiana,False
+8770520,Rainbow Bridge,Unknown,29.98,-93.8817,Louisiana,False
+8770613,"Morgans Point, Barbours Cut",Unknown,29.681667,-94.985,Louisiana,False
+8770777,Manchester,Unknown,29.7263,-95.2658,Louisiana,False
+8770808,High Island,Unknown,29.5947,-94.3903,Louisiana,False
+8770822,"Texas Point, Sabine Pass",Unknown,29.6893,-93.8418,Louisiana,False
+8770971,Rollover Pass,Unknown,29.515,-94.5133,Louisiana,False
+8771013,"Eagle Point, Galveston Bay",Unknown,29.481306,-94.91725,Louisiana,False
+8771341,"Galveston Bay Entrance, North Jetty",Unknown,29.357462,-94.724724,Louisiana,False
+8771367,Sabine Offshore Light,Unknown,29.469,-93.72,Louisiana,False
+8771450,Galveston Pier 21,Unknown,29.31,-94.793304,Louisiana,False
+8771486,Galveston Railroad Bridge,Unknown,29.3026,-94.8971,Louisiana,False
+8771972,San Luis Pass,Unknown,29.095,-95.1133,Louisiana,False
+8772471,Freeport Harbor,Unknown,28.9357,-95.2942,Louisiana,False
+8772985,Sargent,Unknown,28.771639,-95.61684,Louisiana,False
+8773037,Seadrift,Unknown,28.4069,-96.7124,Texas,False
+8773146,Matagorda City,Unknown,28.71,-95.9139,Louisiana,False
+8773259,Port Lavaca,Unknown,28.6406,-96.6098,Texas,False
+8773701,Port O'Connor,Unknown,28.4517,-96.3883,Louisiana,False
+8773767,Matagorda Bay Entrance Channel,Unknown,28.4269,-96.3301,Louisiana,False
+8774230,Aransas Wildlife Refuge,Unknown,28.2283,-96.795,Texas,False
+8774513,Copano Bay,Unknown,28.118305,-97.0217,Texas,False
+8774770,Rockport,Unknown,28.021667,-97.04667,Texas,False
+8775132,La Quinta Channel North,Unknown,27.8804,-97.2735,Texas,False
+8775222,Viola Turning Basin,Unknown,27.8461,-97.5207,Texas,False
+8775237,Port Aransas,Unknown,27.8397,-97.0725,Texas,False
+8775241,"Aransas, Aransas Pass",Unknown,27.8366,-97.0391,Texas,False
+8775283,"Enbridge, Ingleside",Unknown,27.818611,-97.20895,Texas,False
+8775296,"USS Lexington, Corpus Christi Bay",Unknown,27.8149,-97.3892,Texas,False
+8775792,Packery Channel,Unknown,27.6333,-97.2367,Texas,False
+8776139,S. Bird Island,Unknown,27.484362,-97.31811,Texas,False
+8776604,Baffin Bay,Unknown,27.297,-97.40517,Texas,False
+8777812,Rincon Del San Jose,Unknown,26.801195,-97.47056,Texas,False
+8778490,Port Mansfield,Unknown,26.557638,-97.42572,Texas,False
+8779280,Realitos Peninsula,Unknown,26.2624,-97.2853,Texas,False
+8779748,South Padre Island CG Station,Unknown,26.0731,-97.1675,Texas,False
+8779749,SPI Brazos Santiago,Unknown,26.0675,-97.1548,Texas,False
+8779770,Port Isabel,Unknown,26.061167,-97.21553,Texas,False
+9014070,Algonac,Unknown,42.621113,-82.526665,Maryland,False
+9014080,St. Clair State Police,Unknown,42.81222,-82.48556,Maryland,False
+9014087,Dry Dock,Unknown,42.94528,-82.44334,Maryland,False
+9014090,Mouth of the Black River,Unknown,42.9738,-82.4204,Maryland,False
+9014098,Fort Gratiot,Unknown,43.0069,-82.4225,Maryland,False
+9034052,St Clair Shores,Unknown,42.47322,-82.87925,Maryland,False
+9044020,Gibraltar,Unknown,42.090862,-83.186,Virginia,False
+9044030,Wyandotte,Unknown,42.202305,-83.1475,Maryland,False
+9044036,Fort Wayne,Unknown,42.298912,-83.092636,Maryland,False
+9044049,Windmill Point,Unknown,42.357777,-82.92995,Maryland,False
+9052000,Cape Vincent,Unknown,44.13028,-76.33222,New York,False
+9052030,Oswego,Unknown,43.46417,-76.51183,New York,False
+9052058,Rochester,Unknown,43.26903,-77.62575,New York,False
+9052076,Olcott,Unknown,43.33839,-78.72733,New York,False
+9063007,Ashland Ave,Unknown,43.09992,-79.05991,New York,False
+9063009,American Falls,Unknown,43.08106,-79.06136,New York,False
+9063012,Niagara Intake,Unknown,43.07689,-79.01403,New York,False
+9063020,Buffalo,Unknown,42.877445,-78.89047,New York,False
+9063028,Sturgeon Point,Unknown,42.691307,-79.04733,New York,False
+9063038,"Erie, Lake Erie",Unknown,42.15389,-80.075836,Maryland,False
+9063053,Fairport,Unknown,41.75975,-81.28106,Maryland,False
+9063063,Cleveland,Unknown,41.54086,-81.635475,Maryland,False
+9063079,Marblehead,Unknown,41.54364,-82.73139,Virginia,False
+9063085,Toledo,Unknown,41.693554,-83.472275,Virginia,False
+9063090,Fermi Power Plant,Unknown,41.96,-83.25667,Virginia,False
+9075002,Lakeport,Unknown,43.141693,-82.49331,Maryland,False
+9075014,Harbor Beach,Unknown,43.84639,-82.64306,New York,False
+9075035,Essexville,Unknown,43.6404,-83.8468,New York,False
+9075065,Alpena,Unknown,45.063,-83.4286,New York,False
+9075080,Mackinaw City,Unknown,45.77722,-84.72111,New York,False
+9075099,De Tour Village,Unknown,45.9925,-83.8982,New York,False
+9076024,Rock Cut,Unknown,46.264805,-84.19119,New York,False
+9076027,West Neebish Island,Unknown,46.283306,-84.205,New York,False
+9076033,Little Rapids,Unknown,46.485832,-84.30167,New York,False
+9076060,U.S. Slip,Unknown,46.500805,-84.34036,New York,False
+9076070,"S.W. Pier, St. Marys River",Unknown,46.50111,-84.37261,New York,False
+9087023,Ludington,Unknown,43.94736,-86.4415,Virginia,False
+9087031,Holland,Unknown,42.773335,-86.212776,Virginia,False
+9087044,Calumet Harbor,Unknown,41.72972,-87.53833,Virginia,False
+9087057,Milwaukee,Unknown,43.001972,-87.88764,Virginia,False
+9087068,"Kewaunee, Lake Michigan",Unknown,44.46389,-87.50103,New York,False
+9087072,Sturgeon Bay Canal,Unknown,44.794693,-87.31392,New York,False
+9087077,Green Bay East,Unknown,44.539024,-88.00106,New York,False
+9087088,Menominee,Unknown,45.09589,-87.58994,New York,False
+9087096,Port Inland,Unknown,45.96989,-85.8715,New York,False
+9099004,Point Iroquois,Unknown,46.484444,-84.63084,New York,False
+9099018,Marquette C.G.,Unknown,46.545555,-87.37861,New York,False
+9099044,Ontonagon,Unknown,46.874443,-89.324165,New York,False
+9099064,Duluth,Unknown,46.77575,-92.092026,New York,False
+9099090,"Grand Marais, Lake Superior",Unknown,47.748554,-90.34128,New York,False
+9410170,San Diego,Unknown,32.715557,-117.17667,California,False
+9410230,La Jolla,Unknown,32.86689,-117.25714,California,False
+9410660,Los Angeles,Unknown,33.72,-118.272,California,False
+9410840,Santa Monica,Unknown,34.0083,-118.5,California,False
+9411340,Santa Barbara,Unknown,34.40459,-119.6925,California,False
+9412110,Port San Luis,Unknown,35.168888,-120.754166,California,False
+9413450,Monterey,Unknown,36.60889,-121.89139,California,False
+9414290,San Francisco,Unknown,37.806305,-122.46589,California,False
+9414523,Redwood City,Unknown,37.506813,-122.21191,California,False
+9414750,Alameda,Unknown,37.771954,-122.30026,California,False
+9414863,Richmond,Unknown,37.9283,-122.4,California,False
+9415020,Point Reyes,Unknown,37.994167,-122.97361,California,False
+9415102,Martinez-Amorco Pier,Unknown,38.034637,-122.12519,California,False
+9415144,Port Chicago,Unknown,38.056,-122.0395,California,False
+9416131,"Port of West Sacramento, Washington Lake",Unknown,38.56225,-121.5463,California,False
+9416841,Arena Cove,Unknown,38.914555,-123.71108,California,False
+9418767,North Spit,Unknown,40.766907,-124.21735,Oregon,False
+9419750,Crescent City,Unknown,41.74561,-124.18439,Oregon,False
+9431647,Port Orford,Unknown,42.739,-124.4983,Oregon,False
+9432780,Charleston,Unknown,43.345,-124.322,Oregon,False
+9435380,South Beach,Unknown,44.625446,-124.044945,Oregon,False
+9437540,Garibaldi,Unknown,45.55453,-123.918945,Oregon,False
+9439040,Astoria,Unknown,46.207306,-123.7683,Washington,False
+9439099,Wauna,Unknown,46.16,-123.405,Washington,False
+9439201,St Helens,Unknown,45.865,-122.797,Washington,False
+9440083,Vancouver,Unknown,45.631172,-122.69577,Oregon,False
+9440357,TEMCO Kalama Terminal,Unknown,45.9867,-122.8367,Washington,False
+9440422,Longview,Unknown,46.1061,-122.9542,Washington,False
+9440569,Skamokawa,Unknown,46.270306,-123.4565,Washington,False
+9440581,Cape Disappointment,Unknown,46.28103,-124.04628,Washington,False
+9440910,Toke Point,Unknown,46.7075,-123.96694,Washington,False
+9441102,Westport,Unknown,46.90431,-124.10508,Washington,False
+9442396,"La Push, Quillayute River",Unknown,47.912838,-124.63574,Washington,False
+9443090,Neah Bay,Unknown,48.370724,-124.601585,Washington,False
+9444090,Port Angeles,Unknown,48.125,-123.44,Washington,False
+9444900,Port Townsend,Unknown,48.11122,-122.759674,Washington,False
+9445958,Bremerton,Unknown,47.5617,-122.623,Washington,False
+9446484,Tacoma,Unknown,47.2667,-122.4133,Washington,False
+9447130,Seattle,Unknown,47.60264,-122.3393,Washington,False
+9449424,Cherry Point,Unknown,48.862717,-122.75858,Washington,False
+9449880,Friday Harbor,Unknown,48.545277,-123.0125,Washington,False
+9450460,Ketchikan,Unknown,55.331944,-131.62611,Washington,False
+9451054,Port Alexander,Unknown,56.2467,-134.647,Alaska,False
+9451600,Sitka,Unknown,57.051693,-135.342,Alaska,False
+9452210,Juneau,Unknown,58.2988,-134.4106,Alaska,False
+9452400,"Skagway, Taiya Inlet",Unknown,59.4508,-135.328,Alaska,False
+9452634,Elfin Cove,Unknown,58.19472,-136.34694,Alaska,False
+9453220,"Yakutat, Yakutat Bay",Unknown,59.548332,-139.73306,Alaska,False
+9454050,Cordova,Unknown,60.5575,-145.7554,Alaska,False
+9454240,Valdez,Unknown,61.125,-146.362,Alaska,False
+9455090,Seward,Unknown,60.1193,-149.42812,Alaska,False
+9455500,Seldovia,Unknown,59.4405,-151.7199,Alaska,False
+9455760,Nikiski,Unknown,60.683334,-151.39806,Alaska,False
+9455920,Anchorage,Unknown,61.2375,-149.8904,Alaska,False
+9457292,Kodiak Island,Unknown,57.7317,-152.512,Alaska,False
+9457804,Alitak,Unknown,56.89739,-154.248,Alaska,False
+9459450,Sand Point,Unknown,55.331722,-160.50433,Alaska,False
+9459881,King Cove,Unknown,55.05989,-162.32611,Alaska,False
+9461380,Adak Island,Unknown,51.860638,-176.63759,Alaska,False
+9461710,Atka,Unknown,52.231945,-174.1725,Alaska,False
+9462450,Nikolski,Unknown,52.94061,-168.8713,Alaska,False
+9462620,Unalaska,Unknown,53.879196,-166.5403,Alaska,False
+9463502,Port Moller,Unknown,55.985832,-160.57361,Alaska,False
+9464212,"Village Cove, St Paul Island",Unknown,57.1253,-170.2852,Alaska,False
+9468333,Unalakleet,Unknown,63.875,-160.788,Alaska,False
+9468756,"Nome, Norton Sound",Unknown,64.49461,-165.43964,Alaska,False
+9491094,Red Dog Dock,Unknown,67.575806,-164.06439,Alaska,False
+9497645,Prudhoe Bay,Unknown,70.41139,-148.53166,Alaska,False
+9751364,"Christiansted Harbor, St Croix",Unknown,17.747694,-64.69839,Florida,False
+9751381,"Lameshur Bay, St John",Unknown,18.31825,-64.72422,Florida,False
+9751401,Limetree Bay,Unknown,17.6947,-64.7538,Florida,False
+9751639,Charlotte Amalie,Unknown,18.330584,-64.925804,Florida,False
+9752235,Culebra,Unknown,18.300861,-65.302475,Florida,False
+9752621,"Isabel Segunda, Vieques Island",Unknown,18.152527,-65.4438,Florida,False
+9752695,"Esperanza, Vieques Island",Unknown,18.09386,-65.47136,Florida,False
+9753216,Fajardo,Unknown,18.335278,-65.63111,Florida,False
+9754229,Yabucoa Harbor,Unknown,18.055084,-65.833,Florida,False
+9755371,"San Juan, La Puntilla, San Juan Bay",Unknown,18.458944,-66.11642,Florida,False
+9755968,"Salinas, Bahia de Jobos",Unknown,17.949083,-66.225945,Florida,False
+9757811,Arecibo,Unknown,18.480528,-66.70236,Florida,False
+9758066,"Guayanilla, Bahia de Guayanilla",Unknown,18.005861,-66.76661,Florida,False
+9759110,Magueyes Island,Unknown,17.970112,-67.04639,Florida,False
+9759394,Mayaguez,Unknown,18.218834,-67.162445,Florida,False
+9759413,"Aguadilla, Crashboat Beach",Unknown,18.456638,-67.16458,Florida,False
+9759938,Mona Island,Unknown,18.089289,-67.93821,Florida,False
