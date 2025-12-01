@@ -1,0 +1,303 @@
+noaa_station_id,nws_station_id,noaa_station_name,nws_station_name,display_name,lat,lon,state,station_type,supports_water_level,distance_km
+1611400,PHLI,Nawiliwili,Lihue Airport,Nawiliwili (1611400),21.9544,-159.3561,Hawaii,Unknown,False,2.92
+1612340,PHNL,Honolulu,Honolulu International Airport,Honolulu (1612340),21.303333,-157.86453,Hawaii,Unknown,False,8.54
+1612401,PHNL,Pearl Harbor,Honolulu International Airport,Pearl Harbor (1612401),21.3675,-157.9639,Hawaii,Unknown,False,4.01
+1612480,PHNG,Mokuoloe,Kaneohe Bay MCAF,Mokuoloe (1612480),21.433056,-157.79,Hawaii,Unknown,False,2.02
+1615680,PHOG,"Kahului, Kahului Harbor",Kahului Airport,"Kahului, Kahului Harbor (1615680)",20.894945,-156.469,Hawaii,Unknown,False,4.09
+1617433,PHSF,Kawaihae,Bradshaw Army Air Field,Kawaihae (1617433),20.0366,-155.8294,Hawaii,Unknown,False,40.83
+1617760,PHTO,"Hilo, Hilo Bay, Kuhio Bay",Hilo International Airport,"Hilo, Hilo Bay, Kuhio Bay (1617760)",19.730278,-155.05556,Hawaii,Unknown,False,1.89
+1619910,PMDY,"Sand Island, Midway Islands",Midway NAF,"Sand Island, Midway Islands (1619910)",28.211666,-177.36,Hawaii,Unknown,False,1.35
+1630000,PWAK,"Apra Harbor, Guam",Wake Island Airfield,"Apra Harbor, Guam (1630000)",13.443389,144.65636,Hawaii,Unknown,False,2416.97
+1631428,PWAK,"Pago Bay, Guam",Wake Island Airfield,"Pago Bay, Guam (1631428)",13.428333,144.79889,Hawaii,Unknown,False,2402.89
+1770000,PHKO,"Pago Pago, American Samoa","Kailua / Kona, Keahole Airport","Pago Pago, American Samoa (1770000)",-14.28,-170.69,Hawaii,Unknown,False,4100.95
+1820000,PWAK,"Kwajalein, Marshall Islands",Wake Island Airfield,"Kwajalein, Marshall Islands (1820000)",8.731667,167.73611,Hawaii,Unknown,False,1180.78
+1890000,PWAK,"Wake Island, Pacific Ocean",Wake Island Airfield,"Wake Island, Pacific Ocean (1890000)",19.290556,166.6175,Hawaii,Unknown,False,12.36
+2695535,KHSE,Bermuda Biological Station,"Hatteras, Mitchell Field",Bermuda Biological Station (2695535),32.37,-64.695,Rhode Island,Unknown,False,1057.7
+2695540,KHSE,"Bermuda, St. Georges Island","Hatteras, Mitchell Field","Bermuda, St. Georges Island (2695540)",32.3734,-64.7033,Rhode Island,Unknown,False,1056.84
+8311030,KMSS,Ogdensburg,Massena International-Richards Field,Ogdensburg (8311030),44.702778,-75.494446,New York,Unknown,False,57.27
+8311062,KGTB,Alexandria Bay,Fort Drum / Wheeler-Sack U. S. Army Airfield,Alexandria Bay (8311062),44.33111,-75.934525,New York,Unknown,False,34.89
+8410140,KBHB,Eastport,Bar Harbor Automatic Weather Observing / Reporting,Eastport (8410140),44.90461,-66.98289,Maine,Unknown,False,120.29
+8411060,KBHB,Cutler Farris Wharf,Bar Harbor Automatic Weather Observing / Reporting,Cutler Farris Wharf (8411060),44.6567,-67.21,Maine,Unknown,False,94.47
+8413320,KBHB,Bar Harbor,Bar Harbor Automatic Weather Observing / Reporting,Bar Harbor (8413320),44.392193,-68.20428,Maine,Unknown,False,15.17
+8418150,KPWM,Portland,Portland International Jetport,Portland (8418150),43.658054,-70.24416,New Hampshire,Unknown,False,4.66
+8419870,KPSM,Seavey Island,Pease Air Force Base / Portsmouth,Seavey Island (8419870),43.079723,-70.74111,New Hampshire,Unknown,False,6.51
+8443970,KBOS,Boston,"Boston, Logan International Airport",Boston (8443970),42.35389,-71.05028,Massachusetts,Unknown,False,3.35
+8447386,KEWB,Fall River,New Bedford Regional Airport,Fall River (8447386),41.7043,-71.1641,Rhode Island,Unknown,False,16.19
+8447435,KCHH,Chatham,Chatham,Chatham (8447435),41.6885,-69.9511,Rhode Island,Unknown,False,2.73
+8447636,KEWB,New Bedford Harbor,New Bedford Regional Airport,New Bedford Harbor (8447636),41.6212,-70.9137,Rhode Island,Unknown,False,8.97
+8447930,KMVY,Woods Hole,Marthas Vineyard Airport,Woods Hole (8447930),41.523613,-70.67111,Rhode Island,Unknown,False,13.33
+8449130,KACK,Nantucket Island,Nantucket Memorial Airport,Nantucket Island (8449130),41.285,-70.0967,Rhode Island,Unknown,False,3.56
+8452660,KUUU,Newport,Newport State Airport,Newport (8452660),41.504333,-71.32614,Rhode Island,Unknown,False,5.52
+8452944,KPVD,Conimicut Light,"Providence, Green State Airport",Conimicut Light (8452944),41.7167,-71.3433,Rhode Island,Unknown,False,7.35
+8454000,KPVD,Providence,"Providence, Green State Airport",Providence (8454000),41.807167,-71.400665,Rhode Island,Unknown,False,8.92
+8454049,KOQU,Quonset Point,North Kingstown/Quonset State,Quonset Point (8454049),41.5868,-71.411,Rhode Island,Unknown,False,2.69
+8461490,KGON,New London,Groton / New London Airport,New London (8461490),41.371666,-72.09556,Rhode Island,Unknown,False,5.99
+8465705,KHVN,New Haven,New Haven/Tweed,New Haven (8465705),41.2833,-72.9083,Connecticut,Unknown,False,2.39
+8467150,KBDR,Bridgeport,Bridgeport/Igor|Sikorsky Memorial,Bridgeport (8467150),41.17582,-73.18397,Connecticut,Unknown,False,4.54
+8510560,KMTP,Montauk,Montauk Airport,Montauk (8510560),41.048332,-71.95944,Rhode Island,Unknown,False,4.83
+8516945,KLGA,Kings Point,"New York, La Guardia Airport",Kings Point (8516945),40.8103,-73.7649,New Jersey,Unknown,False,10.26
+8518750,KNYC,The Battery,"New York City, Central Park",The Battery (8518750),40.700554,-74.01417,New Jersey,Unknown,False,9.99
+8518962,KPOU,Turkey Point Hudson River NERRS,"Poughkeepsie, Dutchess County Airport",Turkey Point Hudson River NERRS (8518962),42.0139,-73.9392,Connecticut,Unknown,False,41.86
+8518979,KPSF,"Coxsackie, Hudson River",Pittsfield Municipal Airport,"Coxsackie, Hudson River (8518979)",42.35264,-73.79486,Connecticut,Unknown,False,42.34
+8531680,KJFK,Sandy Hook,New York/John F. Kennedy Intl Airport,Sandy Hook (8531680),40.4669,-74.0094,New Jersey,Unknown,False,28.92
+8534720,KACY,Atlantic City,Atlantic City International Airport,Atlantic City (8534720),39.356667,-74.41805,New Jersey,Unknown,False,17.39
+8536110,KWWD,Cape May,Wildwood Automatic Weather Observing / Reporting,Cape May (8536110),38.9683,-74.96,Delaware,Unknown,False,6.96
+8537121,KDOV,Ship John Shoal,Dover Air Force Base,Ship John Shoal (8537121),39.30539,-75.37668,Delaware,Unknown,False,20.07
+8539094,KPNE,"Burlington, Delaware River",Northeast Philadelphia Airport,"Burlington, Delaware River (8539094)",40.0817,-74.8697,New Jersey,Unknown,False,12.82
+8540433,KPHL,Marcus Hook,Philadelphia International Airport,Marcus Hook (8540433),39.811806,-75.4095,New Jersey,Unknown,False,16.64
+8545240,KPHL,Philadelphia,Philadelphia International Airport,Philadelphia (8545240),39.933056,-75.14198,New Jersey,Unknown,False,10.27
+8546252,KPNE,Bridesburg,Northeast Philadelphia Airport,Bridesburg (8546252),39.979683,-75.079315,New Jersey,Unknown,False,13.27
+8548989,KTTN,Newbold,"Trenton, Mercer County Airport",Newbold (8548989),40.137333,-74.75183,New Jersey,Unknown,False,17.94
+8551762,KILG,Delaware City,"Wilmington, New Castle County Airport",Delaware City (8551762),39.582195,-75.588974,Delaware,Unknown,False,10.92
+8551910,KILG,Reedy Point,"Wilmington, New Castle County Airport",Reedy Point (8551910),39.558334,-75.571945,Delaware,Unknown,False,13.74
+8555889,KWWD,Brandywine Shoal Light,Wildwood Automatic Weather Observing / Reporting,Brandywine Shoal Light (8555889),38.986668,-75.113335,Delaware,Unknown,False,18.62
+8557380,KGED,Lewes,"Georgetown, Sussex County Airport",Lewes (8557380),38.782833,-75.11928,Delaware,Unknown,False,22.82
+8570283,KOXB,Ocean City Inlet,Ocean City Municipal Airport,Ocean City Inlet (8570283),38.32833,-75.09167,Delaware,Unknown,False,3.61
+8571421,KNHK,Bishops Head,"Patuxent River, Naval Air Station",Bishops Head (8571421),38.22,-76.0383,Delaware,Unknown,False,32.53
+8571892,KCGE,Cambridge,Cambridge-Dorchester Airport,Cambridge (8571892),38.5725,-76.06167,Delaware,Unknown,False,4.58
+8573364,KMTN,Tolchester Beach,Baltimore / Martin,Tolchester Beach (8573364),39.213444,-76.24455,Maryland,Unknown,False,20.64
+8573927,KILG,Chesapeake City,"Wilmington, New Castle County Airport",Chesapeake City (8573927),39.52667,-75.81,Delaware,Unknown,False,24.79
+8574680,KDMH,Baltimore,"Baltimore, Inner Harbor",Baltimore (8574680),39.2667,-76.5783,Maryland,Unknown,False,3.1
+8575512,KNAK,Annapolis,Annapolis (U.S. Naval Academy),Annapolis (8575512),38.983883,-76.480034,Maryland,Unknown,False,0.43
+8577330,KNHK,Solomons Island,"Patuxent River, Naval Air Station",Solomons Island (8577330),38.3167,-76.4517,Maryland,Unknown,False,5.4
+8594900,KDCA,Washington,"Washington DC, Reagan National Airport",Washington (8594900),38.873333,-77.02167,Maryland,Unknown,False,1.65
+8631044,KMFV,Wachapreague,Melfa / Accomack Airport,Wachapreague (8631044),37.607777,-75.68584,Delaware,Unknown,False,8.77
+8632200,KLFI,Kiptopeke,Langley Air Force Base,Kiptopeke (8632200),37.1652,-75.9884,Delaware,Unknown,False,33.13
+8635027,KNYG,Dahlgren,Quantico Marine Corps Air Facility,Dahlgren (8635027),38.31975,-77.0366,Maryland,Unknown,False,31.21
+8635750,KNHK,Lewisetta,"Patuxent River, Naval Air Station",Lewisetta (8635750),37.9961,-76.4644,Maryland,Unknown,False,33.16
+8636580,KFYJ,Windmill Point,Middle Peninsula Regional Airport,Windmill Point (8636580),37.6155,-76.28978,Delaware,Unknown,False,43.46
+8637689,KPHF,Yorktown USCG Training Center,Newport News / Williamsburg Intl Airport,Yorktown USCG Training Center (8637689),37.2265,-76.478806,Virginia,Unknown,False,9.8
+8638610,KNGU,Sewells Point,"Norfolk, Naval Air Station",Sewells Point (8638610),36.94278,-76.32861,Virginia,Unknown,False,4.33
+8638901,KORF,"CBBT, Chesapeake Channel",Norfolk International Airport,"CBBT, Chesapeake Channel (8638901)",37.0329,-76.0833,Delaware,Unknown,False,17.15
+8639348,KCPK,Money Point,Chesapeake Municipal Airport,Money Point (8639348),36.778194,-76.301865,Virginia,Unknown,False,13.24
+8651370,KFFA,Duck,First Flight Airport,Duck (8651370),36.1833,-75.7467,Virginia,Unknown,False,19.83
+8652587,KMQI,Oregon Inlet Marina,Manteo / Dare County Regional,Oregon Inlet Marina (8652587),35.795696,-75.548195,North Carolina,Unknown,False,19.45
+8654467,KHSE,USCG Station Hatteras,"Hatteras, Mitchell Field",USCG Station Hatteras (8654467),35.20861,-75.70419,North Carolina,Unknown,False,8.01
+8656483,KMRH,"Beaufort, Duke Marine Lab","Beaufort, Michael J Smith Field Airport","Beaufort, Duke Marine Lab (8656483)",34.71733,-76.67066,North Carolina,Unknown,False,1.89
+8658120,KILM,Wilmington,"Wilmington, New Hanover International Airport",Wilmington (8658120),34.2267,-77.9533,North Carolina,Unknown,False,6.67
+8658163,KILM,Wrightsville Beach,"Wilmington, New Hanover International Airport",Wrightsville Beach (8658163),34.213306,-77.7867,North Carolina,Unknown,False,14.32
+8661070,KMYR,Springmaid Pier,Myrtle Beach International Airport,Springmaid Pier (8661070),33.655,-78.9183,South Carolina,Unknown,False,4.04
+8665530,KCHS,Charleston,Charleston Air Force Base,Charleston (8665530),32.780834,-79.923615,South Carolina,Unknown,False,17.47
+8670870,KSVN,Fort Pulaski,Hunter U. S. Army Airfield,Fort Pulaski (8670870),32.034695,-80.90303,Georgia,Unknown,False,23.29
+8679598,KFHB,Kings Bay MSF Pier,Fernandina Beach Municipal Airport,Kings Bay MSF Pier (8679598),30.7781,-81.4914,Georgia,Unknown,False,18.72
+8720030,KFHB,Fernandina Beach,Fernandina Beach Municipal Airport,Fernandina Beach (8720030),30.671356,-81.46584,Georgia,Unknown,False,6.64
+8720218,KNRB,Mayport (Bar Pilots Dock),Mayport Naval Station,Mayport (Bar Pilots Dock) (8720218),30.398167,-81.42789,Georgia,Unknown,False,0.78
+8720219,KCRG,Dames Point,"Jacksonville, Craig Municipal Airport",Dames Point (8720219),30.3867,-81.5583,Georgia,Unknown,False,7.3
+8720226,KNIP,"Southbank Riverwalk, St Johns River","Jacksonville, Naval Air Station","Southbank Riverwalk, St Johns River (8720226)",30.32,-81.6583,Georgia,Unknown,False,10.22
+8720357,KNIP,I-295 Buckman Bridge,"Jacksonville, Naval Air Station",I-295 Buckman Bridge (8720357),30.192417,-81.68889,Georgia,Unknown,False,4.27
+8721604,KXMR,"Trident Pier, Port Canaveral",Cape Canaveral Air Force Station Skid Strip,"Trident Pier, Port Canaveral (8721604)",28.4158,-80.5931,Florida,Unknown,False,6.32
+8722670,KPBI,"Lake Worth Pier, Atlantic Ocean","West Palm Beach, Palm Beach International Airport","Lake Worth Pier, Atlantic Ocean (8722670)",26.612778,-80.034164,Florida,Unknown,False,11.34
+8722956,KFLL,South Port Everglades,Fort Lauderdale / Hollywood Intl Airport,South Port Everglades (8722956),26.081667,-80.11667,Florida,Unknown,False,3.57
+8723214,KMIA,Virginia Key,Miami International Airport,Virginia Key (8723214),25.7314,-80.1618,Florida,Unknown,False,16.74
+8723970,KMTH,"Vaca Key, Florida Bay",Marathon Airport,"Vaca Key, Florida Bay (8723970)",24.711,-81.1065,Florida,Unknown,False,6.55
+8724580,KEYW,Key West,Key West Airport,Key West (8724580),24.5557,-81.8079,Florida,Unknown,False,5.89
+8725114,KAPF,"NAPLES BAY, NORTH",Naples Municipal,"NAPLES BAY, NORTH (8725114)",26.1367,-81.7883,Florida,Unknown,False,2.35
+8725520,KFMY,Fort Myers,"Fort Myers, Page Field",Fort Myers (8725520),26.647778,-81.87111,Florida,Unknown,False,7.54
+8726384,KSPG,Port Manatee,"St. Petersburg, Whitted Airport",Port Manatee (8726384),27.6387,-82.5621,Florida,Unknown,False,16.06
+8726520,KSPG,St. Petersburg,"St. Petersburg, Whitted Airport",St. Petersburg (8726520),27.7606,-82.6269,Florida,Unknown,False,1.09
+8726607,KMCF,Old Port Tampa,"Macdill Air Force Base, Fl.",Old Port Tampa (8726607),27.8578,-82.5528,Florida,Unknown,False,3.23
+8726674,KTPF,East Bay,Peter O Knight Airport,East Bay (8726674),27.9231,-82.4214,Florida,Unknown,False,2.87
+8726724,KPIE,Clearwater Beach,St. Petersburg / Clea,Clearwater Beach (8726724),27.978333,-82.831665,Florida,Unknown,False,15.86
+8727520,KCTY,Cedar Key,Cross City Airport,Cedar Key (8727520),29.135,-83.0317,Florida,Unknown,False,56.54
+8728690,KAAF,Apalachicola,Apalachicola,Apalachicola (8728690),29.724445,-84.98055,Georgia,Unknown,False,4.5
+8729108,KPFN,Panama City,Panama City-Bay County Intl Airport,Panama City (8729108),30.149723,-85.664444,Alabama,Unknown,False,5.79
+8729210,KECP,Panama City Beach,Northwest Florida - Panama City International Airp,Panama City Beach (8729210),30.21375,-85.878586,Alabama,Unknown,False,17.93
+8729840,KPNS,Pensacola,Pensacola International Airport,Pensacola (8729840),30.4044,-87.2112,Alabama,Unknown,False,7.37
+8735180,KJKA,Dauphin Island,Jack Edwards Airport,Dauphin Island (8735180),30.25,-88.075,Alabama,Unknown,False,38.97
+8735391,KBFM,Dog River Bridge,Mobile Downtown Airport,Dog River Bridge (8735391),30.5652,-88.088,Alabama,Unknown,False,8.49
+8735523,KBFM,East Fowl River Bridge,Mobile Downtown Airport,East Fowl River Bridge (8735523),30.4437,-88.1139,Alabama,Unknown,False,22.23
+8736897,KBFM,Coast Guard Sector Mobile,Mobile Downtown Airport,Coast Guard Sector Mobile (8736897),30.6495,-88.05811,Alabama,Unknown,False,1.55
+8737048,KBFM,Mobile State Docks,Mobile Downtown Airport,Mobile State Docks (8737048),30.70461,-88.03961,Alabama,Unknown,False,7.75
+8737138,KBFM,Chickasaw Creek,Mobile Downtown Airport,Chickasaw Creek (8737138),30.7819,-88.0736,Alabama,Unknown,False,15.78
+8738043,KBFM,West Fowl River Bridge,Mobile Downtown Airport,West Fowl River Bridge (8738043),30.3766,-88.1586,Alabama,Unknown,False,30.49
+8739803,KPGL,Bayou La Batre Bridge,Pascagoula / Jackson,Bayou La Batre Bridge (8739803),30.4057,-88.2477,Mississippi,Unknown,False,22.58
+8741533,KPGL,Pascagoula NOAA Lab,Pascagoula / Jackson,Pascagoula NOAA Lab (8741533),30.367777,-88.56306,Mississippi,Unknown,False,8.47
+8747437,KGPT,Bay Waveland Yacht Club,Gulfport-Biloxi Regional Airport,Bay Waveland Yacht Club (8747437),30.326342,-89.3258,Mississippi,Unknown,False,25.87
+8760721,KBVE,Pilottown,Boothville,Pilottown (8760721),29.179306,-89.258835,Louisiana,Unknown,False,21.9
+8760922,KBVE,"Pilots Station East, S.W. Pass",Boothville,"Pilots Station East, S.W. Pass (8760922)",28.9322,-89.4075,Louisiana,Unknown,False,44.57
+8761305,KNBG,Shell Beach,"New Orleans, Naval Air Station",Shell Beach (8761305),29.86811,-89.67325,Louisiana,Unknown,False,33.38
+8761724,K2GL,Grand Isle,Galliano Heliport,Grand Isle (8761724),29.263334,-89.956665,Louisiana,Unknown,False,37.41
+8761927,KNEW,New Canal Station,New Orleans Lakefront Airport,New Canal Station (8761927),30.027222,-90.113335,Louisiana,Unknown,False,8.15
+8761955,KMSY,Carrollton,New Orleans International Airport,Carrollton (8761955),29.932888,-90.135475,Louisiana,Unknown,False,12.21
+8762075,K2GL,"Port Fourchon, Belle Pass",Galliano Heliport,"Port Fourchon, Belle Pass (8762075)",29.1142,-90.1993,Louisiana,Unknown,False,35.06
+8762482,KMSY,"West Bank 1, Bayou Gauche",New Orleans International Airport,"West Bank 1, Bayou Gauche (8762482)",29.78861,-90.42028,Louisiana,Unknown,False,26.88
+8764044,KP92,"Berwick, Atchafalaya River",Salt Point,"Berwick, Atchafalaya River (8764044)",29.6675,-91.23761,Louisiana,Unknown,False,9.63
+8764227,KP92,"LAWMA, Amerada Pass",Salt Point,"LAWMA, Amerada Pass (8764227)",29.4496,-91.3381,Louisiana,Unknown,False,17.13
+8764314,KP92,"Eugene Island, North of, Atchafalaya Bay",Salt Point,"Eugene Island, North of, Atchafalaya Bay (8764314)",29.3675,-91.3839,Louisiana,Unknown,False,27.1
+8766072,K7R4,Freshwater Canal Locks,Intracoastal City,Freshwater Canal Locks (8766072),29.551695,-92.30519,Louisiana,Unknown,False,30.63
+8767816,KCWF,Lake Charles,Chenault Airpark,Lake Charles (8767816),30.223612,-93.221664,Louisiana,Unknown,False,6.9
+8767961,KLCH,Bulk Terminal,Lake Charles Regional Airport,Bulk Terminal (8767961),30.1903,-93.3007,Louisiana,Unknown,False,11.01
+8768094,K7R5,Calcasieu Pass,Cameron Heliport,Calcasieu Pass (8768094),29.768167,-93.34289,Louisiana,Unknown,False,4.46
+8770475,KBPT,Port Arthur,"Beaumont/Port Arthur, SE Texas Regional Airport",Port Arthur (8770475),29.8667,-93.93,Louisiana,Unknown,False,12.69
+8770520,KORG,Rainbow Bridge,Orange County Airport,Rainbow Bridge (8770520),29.98,-93.8817,Louisiana,Unknown,False,12.47
+8770613,KEFD,"Morgans Point, Barbours Cut",Houston / Ellington,"Morgans Point, Barbours Cut (8770613)",29.681667,-94.985,Louisiana,Unknown,False,19.15
+8770777,KHOU,Manchester,Houston Hobby Airport,Manchester (8770777),29.7263,-95.2658,Louisiana,Unknown,False,8.59
+8770808,KRPE,High Island,Sabine Pass,High Island (8770808),29.5947,-94.3903,Louisiana,Unknown,False,44.13
+8770822,KRPE,"Texas Point, Sabine Pass",Sabine Pass,"Texas Point, Sabine Pass (8770822)",29.6893,-93.8418,Louisiana,Unknown,False,10.52
+8770971,KGLS,Rollover Pass,"Galveston, Scholes Field",Rollover Pass (8770971),29.515,-94.5133,Louisiana,Unknown,False,44.0
+8771013,KGLS,"Eagle Point, Galveston Bay","Galveston, Scholes Field","Eagle Point, Galveston Bay (8771013)",29.481306,-94.91725,Louisiana,Unknown,False,23.94
+8771341,KGLS,"Galveston Bay Entrance, North Jetty","Galveston, Scholes Field","Galveston Bay Entrance, North Jetty (8771341)",29.357462,-94.724724,Louisiana,Unknown,False,17.12
+8771367,KRPE,Sabine Offshore Light,Sabine Pass,Sabine Offshore Light (8771367),29.469,-93.72,Louisiana,Unknown,False,33.98
+8771450,KGLS,Galveston Pier 21,"Galveston, Scholes Field",Galveston Pier 21 (8771450),29.31,-94.793304,Louisiana,Unknown,False,8.67
+8771486,KGLS,Galveston Railroad Bridge,"Galveston, Scholes Field",Galveston Railroad Bridge (8771486),29.3026,-94.8971,Louisiana,Unknown,False,4.48
+8771972,KGLS,San Luis Pass,"Galveston, Scholes Field",San Luis Pass (8771972),29.095,-95.1133,Louisiana,Unknown,False,30.6
+8772471,KLBX,Freeport Harbor,"Angleton / Lake Jackson, Brazoria County Airport",Freeport Harbor (8772471),28.9357,-95.2942,Louisiana,Unknown,False,26.69
+8772985,KBYY,Sargent,Bay City,Sargent (8772985),28.771639,-95.61684,Louisiana,Unknown,False,32.8
+8773037,KPKV,Seadrift,Calhoun County Airport,Seadrift (8773037),28.4069,-96.7124,Texas,Unknown,False,27.39
+8773146,KBYY,Matagorda City,Bay City,Matagorda City (8773146),28.71,-95.9139,Louisiana,Unknown,False,29.66
+8773259,KPKV,Port Lavaca,Calhoun County Airport,Port Lavaca (8773259),28.6406,-96.6098,Texas,Unknown,False,5.68
+8773701,KPSX,Port O'Connor,Palacios Municipal Airport,Port O'Connor (8773701),28.4517,-96.3883,Louisiana,Unknown,False,32.75
+8773767,KPSX,Matagorda Bay Entrance Channel,Palacios Municipal Airport,Matagorda Bay Entrance Channel (8773767),28.4269,-96.3301,Louisiana,Unknown,False,33.52
+8774230,KRKP,Aransas Wildlife Refuge,"Rockport, Aransas County Airport",Aransas Wildlife Refuge (8774230),28.2283,-96.795,Texas,Unknown,False,29.35
+8774513,KRKP,Copano Bay,"Rockport, Aransas County Airport",Copano Bay (8774513),28.118305,-97.0217,Texas,Unknown,False,4.2
+8774770,KRKP,Rockport,"Rockport, Aransas County Airport",Rockport (8774770),28.021667,-97.04667,Texas,Unknown,False,7.61
+8775132,K2R8,La Quinta Channel North,Mustang Beach Airport,La Quinta Channel North (8775132),27.8804,-97.2735,Texas,Unknown,False,20.01
+8775222,KCRP,Viola Turning Basin,Corpus Christi International Airport,Viola Turning Basin (8775222),27.8461,-97.5207,Texas,Unknown,False,8.7
+8775237,K2R8,Port Aransas,Mustang Beach Airport,Port Aransas (8775237),27.8397,-97.0725,Texas,Unknown,False,2.73
+8775241,K2R8,"Aransas, Aransas Pass",Mustang Beach Airport,"Aransas, Aransas Pass (8775241)",27.8366,-97.0391,Texas,Unknown,False,4.84
+8775283,K2R8,"Enbridge, Ingleside",Mustang Beach Airport,"Enbridge, Ingleside (8775283)",27.818611,-97.20895,Texas,Unknown,False,12.39
+8775296,KCRP,"USS Lexington, Corpus Christi Bay",Corpus Christi International Airport,"USS Lexington, Corpus Christi Bay (8775296)",27.8149,-97.3892,Texas,Unknown,False,11.99
+8775792,KNGP,Packery Channel,"Corpus Christi, Naval Air Station",Packery Channel (8775792),27.6333,-97.2367,Texas,Unknown,False,7.16
+8776139,KNGP,S. Bird Island,"Corpus Christi, Naval Air Station",S. Bird Island (8776139),27.484362,-97.31811,Texas,Unknown,False,22.36
+8776604,KNGP,Baffin Bay,"Corpus Christi, Naval Air Station",Baffin Bay (8776604),27.297,-97.40517,Texas,Unknown,False,44.58
+8777812,KHRL,Rincon Del San Jose,"Harlingen, Rio Grande Valley International Airport",Rincon Del San Jose (8777812),26.801195,-97.47056,Texas,Unknown,False,66.54
+8778490,KHRL,Port Mansfield,"Harlingen, Rio Grande Valley International Airport",Port Mansfield (8778490),26.557638,-97.42572,Texas,Unknown,False,43.81
+8779280,KPIL,Realitos Peninsula,Port Isabel-Cameron County Airport,Realitos Peninsula (8779280),26.2624,-97.2853,Texas,Unknown,False,12.64
+8779748,KSPL,South Padre Island CG Station,South Padre Island Heliport,South Padre Island CG Station (8779748),26.0731,-97.1675,Texas,Unknown,False,1.07
+8779749,KSPL,SPI Brazos Santiago,South Padre Island Heliport,SPI Brazos Santiago (8779749),26.0675,-97.1548,Texas,Unknown,False,0.42
+8779770,KSPL,Port Isabel,South Padre Island Heliport,Port Isabel (8779770),26.061167,-97.21553,Texas,Unknown,False,5.92
+9014070,KMTC,Algonac,Selfridge Air National Guard Base,Algonac (9014070),42.621113,-82.526665,Maryland,Unknown,False,25.64
+9014080,KPHN,St. Clair State Police,St. Clair County International,St. Clair State Police (9014080),42.81222,-82.48556,Maryland,Unknown,False,12.52
+9014087,KPHN,Dry Dock,St. Clair County International,Dry Dock (9014087),42.94528,-82.44334,Maryland,Unknown,False,7.59
+9014090,KPHN,Mouth of the Black River,St. Clair County International,Mouth of the Black River (9014090),42.9738,-82.4204,Maryland,Unknown,False,10.74
+9014098,KPHN,Fort Gratiot,St. Clair County International,Fort Gratiot (9014098),43.0069,-82.4225,Maryland,Unknown,False,13.03
+9034052,KDET,St Clair Shores,Detroit City Airport,St Clair Shores (9034052),42.47322,-82.87925,Maryland,Unknown,False,13.93
+9044020,KONZ,Gibraltar,Grosse Ile Municipal Airport,Gibraltar (9044020),42.090862,-83.186,Virginia,Unknown,False,2.37
+9044030,KONZ,Wyandotte,Grosse Ile Municipal Airport,Wyandotte (9044030),42.202305,-83.1475,Maryland,Unknown,False,11.42
+9044036,KDET,Fort Wayne,Detroit City Airport,Fort Wayne (9044036),42.298912,-83.092636,Maryland,Unknown,False,12.84
+9044049,KDET,Windmill Point,Detroit City Airport,Windmill Point (9044049),42.357777,-82.92995,Maryland,Unknown,False,8.55
+9052000,KART,Cape Vincent,Watertown International Airport,Cape Vincent (9052000),44.13028,-76.33222,New York,Unknown,False,28.3
+9052030,KFZY,Oswego,"Fulton, Oswego County Airport",Oswego (9052030),43.46417,-76.51183,New York,Unknown,False,15.2
+9052058,KROC,Rochester,Greater Rochester International Airport,Rochester (9052058),43.26903,-77.62575,New York,Unknown,False,16.96
+9052076,KIAG,Olcott,Niagara Falls International Airport,Olcott (9052076),43.33839,-78.72733,New York,Unknown,False,31.15
+9063007,KIAG,Ashland Ave,Niagara Falls International Airport,Ashland Ave (9063007),43.09992,-79.05991,New York,Unknown,False,8.99
+9063009,KIAG,American Falls,Niagara Falls International Airport,American Falls (9063009),43.08106,-79.06136,New York,Unknown,False,9.6
+9063012,KIAG,Niagara Intake,Niagara Falls International Airport,Niagara Intake (9063012),43.07689,-79.01403,New York,Unknown,False,6.37
+9063020,KBUF,Buffalo,Greater Buffalo International Airport,Buffalo (9063020),42.877445,-78.89047,New York,Unknown,False,14.81
+9063028,KDKK,Sturgeon Point,Chautauqua County / Dunkirk Airport,Sturgeon Point (9063028),42.691307,-79.04733,New York,Unknown,False,28.55
+9063038,KERI,"Erie, Lake Erie",Erie International Airport,"Erie, Lake Erie (9063038)",42.15389,-80.075836,Maryland,Unknown,False,11.89
+9063053,KCGF,Fairport,Cleveland / Cuyahoga,Fairport (9063053),41.75975,-81.28106,Maryland,Unknown,False,25.93
+9063063,KBKL,Cleveland,Cleveland/Burke Lakefront,Cleveland (9063063),41.54086,-81.635475,Maryland,Unknown,False,4.37
+9063079,KLPR,Marblehead,Lorain County Regional Airport,Marblehead (9063079),41.54364,-82.73139,Virginia,Unknown,False,51.02
+9063085,KTDZ,Toledo,"Toledo, Metcalf Field",Toledo (9063085),41.693554,-83.472275,Virginia,Unknown,False,14.86
+9063090,KTTF,Fermi Power Plant,"Monroe, Custer Airport",Fermi Power Plant (9063090),41.96,-83.25667,Virginia,Unknown,False,14.51
+9075002,KPHN,Lakeport,St. Clair County International,Lakeport (9075002),43.141693,-82.49331,Maryland,Unknown,False,24.83
+9075014,KP58,Harbor Beach,Port Hope,Harbor Beach (9075014),43.84639,-82.64306,New York,Unknown,False,22.92
+9075035,KMBS,Essexville,"Saginaw, MBS International Airport",Essexville (9075035),43.6404,-83.8468,New York,Unknown,False,22.44
+9075065,KAPN,Alpena,Alpena County Regional Airport,Alpena (9075065),45.063,-83.4286,New York,Unknown,False,11.26
+9075080,KMCD,Mackinaw City,Mackinac Island Airport,Mackinaw City (9075080),45.77722,-84.72111,New York,Unknown,False,11.15
+9075099,KCIU,De Tour Village,Chippewa International Automatic Weather Observing,De Tour Village (9075099),45.9925,-83.8982,New York,Unknown,False,53.17
+9076024,KCIU,Rock Cut,Chippewa International Automatic Weather Observing,Rock Cut (9076024),46.264805,-84.19119,New York,Unknown,False,21.44
+9076027,KCIU,West Neebish Island,Chippewa International Automatic Weather Observing,West Neebish Island (9076027),46.283306,-84.205,New York,Unknown,False,20.53
+9076033,KANJ,Little Rapids,Sault Ste. Marie,Little Rapids (9076033),46.485832,-84.30167,New York,Unknown,False,4.93
+9076060,KANJ,U.S. Slip,Sault Ste. Marie,U.S. Slip (9076060),46.500805,-84.34036,New York,Unknown,False,2.63
+9076070,KANJ,"S.W. Pier, St. Marys River",Sault Ste. Marie,"S.W. Pier, St. Marys River (9076070)",46.50111,-84.37261,New York,Unknown,False,1.86
+9087023,KLDM,Ludington,"Ludington, Mason County Airport",Ludington (9087023),43.94736,-86.4415,Virginia,Unknown,False,2.89
+9087031,KBIV,Holland,West Michigan Regional Airport,Holland (9087031),42.773335,-86.212776,Virginia,Unknown,False,9.57
+9087044,KGYY,Calumet Harbor,Gary Chicago International,Calumet Harbor (9087044),41.72972,-87.53833,Virginia,Unknown,False,15.67
+9087057,KMKE,Milwaukee,"Milwaukee, General Mitchell International Airport",Milwaukee (9087057),43.001972,-87.88764,Virginia,Unknown,False,4.77
+9087068,KMTW,"Kewaunee, Lake Michigan",Manitowoc Municipal Automatic Weather Observing,"Kewaunee, Lake Michigan (9087068)",44.46389,-87.50103,New York,Unknown,False,38.44
+9087072,KSUE,Sturgeon Bay Canal,Sturgeon Bay,Sturgeon Bay Canal (9087072),44.794693,-87.31392,New York,Unknown,False,6.7
+9087077,KGRB,Green Bay East,"Green Bay, Austin Straubel International Airport",Green Bay East (9087077),44.539024,-88.00106,New York,Unknown,False,12.15
+9087088,KMNM,Menominee,Menominee Automatic Weather Observing / Reporting,Menominee (9087088),45.09589,-87.58994,New York,Unknown,False,4.13
+9087096,KP75,Port Inland,Marquette,Port Inland (9087096),45.96989,-85.8715,New York,Unknown,False,5.81
+9099004,KANJ,Point Iroquois,Sault Ste. Marie,Point Iroquois (9099004),46.484444,-84.63084,New York,Unknown,False,20.28
+9099018,KMQT,Marquette C.G.,Marquette,Marquette C.G. (9099018),46.545555,-87.37861,New York,Unknown,False,13.18
+9099044,KCMX,Ontonagon,"Hancock, Houghton County Memorial Airport",Ontonagon (9099044),46.874443,-89.324165,New York,Unknown,False,71.11
+9099064,KDYT,Duluth,Sky Harbor Airport,Duluth (9099064),46.77575,-92.092026,New York,Unknown,False,7.36
+9099090,KGNA,"Grand Marais, Lake Superior",The Bay of Grand Marais,"Grand Marais, Lake Superior (9099090)",47.748554,-90.34128,New York,Unknown,False,0.19
+9410170,KSAN,San Diego,San Diego/Lindbergh,San Diego (9410170),32.715557,-117.17667,California,Unknown,False,1.72
+9410230,KNKX,La Jolla,Miramar MCAS,La Jolla (9410230),32.86689,-117.25714,California,Unknown,False,10.11
+9410660,KTOA,Los Angeles,Torrance Municipal,Los Angeles (9410660),33.72,-118.272,California,Unknown,False,10.39
+9410840,KSMO,Santa Monica,Santa Monica Muni,Santa Monica (9410840),34.0083,-118.5,California,Unknown,False,5.2
+9411340,KSBA,Santa Barbara,Santa Barbara Muni,Santa Barbara (9411340),34.40459,-119.6925,California,Unknown,False,13.21
+9412110,KSBP,Port San Luis,San Luis Obispo,Port San Luis (9412110),35.168888,-120.754166,California,Unknown,False,13.04
+9413450,KMRY,Monterey,Monterey Peninsula,Monterey (9413450),36.60889,-121.89139,California,Unknown,False,5.05
+9414290,KSFO,San Francisco,San Francisco Intl Airport,San Francisco (9414290),37.806305,-122.46589,California,Unknown,False,22.37
+9414523,KSQL,Redwood City,San Carlos Airport,Redwood City (9414523),37.506813,-122.21191,California,Unknown,False,4.23
+9414750,KOAK,Alameda,Oakland,Alameda (9414750),37.771954,-122.30026,California,Unknown,False,10.67
+9414863,KDVO,Richmond,Novato/Gnoss Field Airport,Richmond (9414863),37.9283,-122.4,California,Unknown,False,27.56
+9415020,KDVO,Point Reyes,Novato/Gnoss Field Airport,Point Reyes (9415020),37.994167,-122.97361,California,Unknown,False,40.16
+9415102,KCCR,Martinez-Amorco Pier,Concord/Buchanan,Martinez-Amorco Pier (9415102),38.034637,-122.12519,California,Unknown,False,8.96
+9415144,KCCR,Port Chicago,Concord/Buchanan,Port Chicago (9415144),38.056,-122.0395,California,Unknown,False,8.5
+9416131,KSAC,"Port of West Sacramento, Washington Lake",Sacramento/Executiv,"Port of West Sacramento, Washington Lake (9416131)",38.56225,-121.5463,California,Unknown,False,6.19
+9416841,KUKI,Arena Cove,Ukiah Muni (awos),Arena Cove (9416841),38.914555,-123.71108,California,Unknown,False,50.77
+9418767,KEKA,North Spit,Eureka,North Spit (9418767),40.766907,-124.21735,Oregon,Unknown,False,5.61
+9419750,KCEC,Crescent City,Crescent City,Crescent City (9419750),41.74561,-124.18439,Oregon,Unknown,False,6.76
+9431647,K92S,Port Orford,Cape Blanco (cgs),Port Orford (9431647),42.739,-124.4983,Oregon,Unknown,False,11.86
+9432780,KOTH,Charleston,North Bend (awos),Charleston (9432780),43.345,-124.322,Oregon,Unknown,False,11.1
+9435380,KJNW,South Beach,Newport,South Beach (9435380),44.625446,-124.044945,Oregon,Unknown,False,5.03
+9437540,KS47,Garibaldi,Tillamook Municipal Airport,Garibaldi (9437540),45.55453,-123.918945,Oregon,Unknown,False,17.23
+9439040,KAST,Astoria,Astoria/Clatsop,Astoria (9439040),46.207306,-123.7683,Washington,Unknown,False,10.08
+9439099,KAST,Wauna,Astoria/Clatsop,Wauna (9439099),46.16,-123.405,Washington,Unknown,False,36.58
+9439201,KSPB,St Helens,Scappoose Industrial Apk (1s4),St Helens (9439201),45.865,-122.797,Washington,Unknown,False,11.8
+9440083,KVUO,Vancouver,Pearson Airpark Vancouver,Vancouver (9440083),45.631172,-122.69577,Oregon,Unknown,False,3.05
+9440357,KKLS,TEMCO Kalama Terminal,Kelso-Longview AWOS,TEMCO Kalama Terminal (9440357),45.9867,-122.8367,Washington,Unknown,False,15.29
+9440422,KKLS,Longview,Kelso-Longview AWOS,Longview (9440422),46.1061,-122.9542,Washington,Unknown,False,4.35
+9440569,KAST,Skamokawa,Astoria/Clatsop,Skamokawa (9440569),46.270306,-123.4565,Washington,Unknown,False,34.82
+9440581,KAST,Cape Disappointment,Astoria/Clatsop,Cape Disappointment (9440581),46.28103,-124.04628,Washington,Unknown,False,18.57
+9440910,KHQM,Toke Point,Hoquiam/Bowerman,Toke Point (9440910),46.7075,-123.96694,Washington,Unknown,False,30.3
+9441102,KHQM,Westport,Hoquiam/Bowerman,Westport (9441102),46.90431,-124.10508,Washington,Unknown,False,13.27
+9442396,KUIL,"La Push, Quillayute River",Quillayute State,"La Push, Quillayute River (9442396)",47.912838,-124.63574,Washington,Unknown,False,8.26
+9443090,KUIL,Neah Bay,Quillayute State,Neah Bay (9443090),48.370724,-124.601585,Washington,Unknown,False,45.83
+9444090,KCLM,Port Angeles,Port Angeles Intl Airport,Port Angeles (9444090),48.125,-123.44,Washington,Unknown,False,4.49
+9444900,K76S,Port Townsend,Oak Harbor Airport,Port Townsend (9444900),48.11122,-122.759674,Washington,Unknown,False,16.89
+9445958,KPWT,Bremerton,Bremerton Ntnl Awos,Bremerton (9445958),47.5617,-122.623,Washington,Unknown,False,14.3
+9446484,KTIW,Tacoma,Tacoma Narrows,Tacoma (9446484),47.2667,-122.4133,Washington,Unknown,False,12.66
+9447130,KBFI,Seattle,Seattle/Boeing Fld,Seattle (9447130),47.60264,-122.3393,Washington,Unknown,False,7.56
+9449424,KBLI,Cherry Point,Bellingham Intl Airport,Cherry Point (9449424),48.862717,-122.75858,Washington,Unknown,False,17.93
+9449880,KFHR,Friday Harbor,Friday Harbor,Friday Harbor (9449880),48.545277,-123.0125,Washington,Unknown,False,2.86
+9450460,PAKT,Ketchikan,Ketchikan International Airport,Ketchikan (9450460),55.331944,-131.62611,Washington,Unknown,False,5.09
+9451054,PAAP,Port Alexander,Port Alexander,Port Alexander (9451054),56.2467,-134.647,Alaska,Unknown,False,1.68
+9451600,PASI,Sitka,Sitka,Sitka (9451600),57.051693,-135.342,Alaska,Unknown,False,2.09
+9452210,PAJN,Juneau,Juneau International Airport,Juneau (9452210),58.2988,-134.4106,Alaska,Unknown,False,13.39
+9452400,PAGY,"Skagway, Taiya Inlet",Skagway,"Skagway, Taiya Inlet (9452400)",59.4508,-135.328,Alaska,Unknown,False,3.28
+9452634,PAEL,Elfin Cove,Elfin Cove Seaplane,Elfin Cove (9452634),58.19472,-136.34694,Alaska,Unknown,False,1.71
+9453220,PAYA,"Yakutat, Yakutat Bay",Yakutat,"Yakutat, Yakutat Bay (9453220)",59.548332,-139.73306,Alaska,Unknown,False,4.75
+9454050,PACV,Cordova,Cordova/Merle K,Cordova (9454050),60.5575,-145.7554,Alaska,Unknown,False,15.37
+9454240,PAVW,Valdez,Valdez Weather Station Office,Valdez (9454240),61.125,-146.362,Alaska,Unknown,False,0.85
+9455090,PAWD,Seward,Seward Airport,Seward (9455090),60.1193,-149.42812,Alaska,Unknown,False,1.21
+9455500,PASO,Seldovia,Seldovia Airport,Seldovia (9455500),59.4405,-151.7199,Alaska,Unknown,False,1.13
+9455760,PAEN,Nikiski,Kenai Municipal Airport,Nikiski (9455760),60.683334,-151.39806,Alaska,Unknown,False,14.04
+9455920,PAMR,Anchorage,Merrill Field,Anchorage (9455920),61.2375,-149.8904,Alaska,Unknown,False,3.53
+9457292,PADQ,Kodiak Island,Kodiak,Kodiak Island (9457292),57.7317,-152.512,Alaska,Unknown,False,3.23
+9457804,PADQ,Alitak,Kodiak,Alitak (9457804),56.89739,-154.248,Alaska,Unknown,False,142.15
+9459450,PASD,Sand Point,Sand Point,Sand Point (9459450),55.331722,-160.50433,Alaska,Unknown,False,1.64
+9459881,PAVC,King Cove,King Cove Airport,King Cove (9459881),55.05989,-162.32611,Alaska,Unknown,False,7.35
+9461380,PADK,Adak Island,Adak Is. NAF,Adak Island (9461380),51.860638,-176.63759,Alaska,Unknown,False,3.37
+9461710,PAAK,Atka,Atka Airport,Atka (9461710),52.231945,-174.1725,Alaska,Unknown,False,2.5
+9462450,PADU,Nikolski,Unalaska,Nikolski (9462450),52.94061,-168.8713,Alaska,Unknown,False,187.66
+9462620,PADU,Unalaska,Unalaska,Unalaska (9462620),53.879196,-166.5403,Alaska,Unknown,False,1.38
+9463502,PAOU,Port Moller,Nelson Lagoon Airport,Port Moller (9463502),55.985832,-160.57361,Alaska,Unknown,False,36.54
+9464212,PASN,"Village Cove, St Paul Island",St. Paul Is.,"Village Cove, St Paul Island (9464212)",57.1253,-170.2852,Alaska,Unknown,False,4.8
+9468333,PAUN,Unalakleet,Unalakleet,Unalakleet (9468333),63.875,-160.788,Alaska,Unknown,False,1.99
+9468756,PAOM,"Nome, Norton Sound",Nome Airport,"Nome, Norton Sound (9468756)",64.49461,-165.43964,Alaska,Unknown,False,0.6
+9491094,PAVL,Red Dog Dock,Kivalina Airport,Red Dog Dock (9491094),67.575806,-164.06439,Alaska,Unknown,False,26.75
+9497645,PASC,Prudhoe Bay,Deadhorse Airport,Prudhoe Bay (9497645),70.41139,-148.53166,Alaska,Unknown,False,23.62
+9751364,KHST,"Christiansted Harbor, St Croix",Homestead Air Force Base,"Christiansted Harbor, St Croix (9751364)",17.747694,-64.69839,Florida,Unknown,False,1832.79
+9751381,KHST,"Lameshur Bay, St John",Homestead Air Force Base,"Lameshur Bay, St John (9751381)",18.31825,-64.72422,Florida,Unknown,False,1798.83
+9751401,KHST,Limetree Bay,Homestead Air Force Base,Limetree Bay (9751401),17.6947,-64.7538,Florida,Unknown,False,1830.77
+9751639,KHST,Charlotte Amalie,Homestead Air Force Base,Charlotte Amalie (9751639),18.330584,-64.925804,Florida,Unknown,False,1779.58
+9752235,KHST,Culebra,Homestead Air Force Base,Culebra (9752235),18.300861,-65.302475,Florida,Unknown,False,1746.62
+9752621,KHST,"Isabel Segunda, Vieques Island",Homestead Air Force Base,"Isabel Segunda, Vieques Island (9752621)",18.152527,-65.4438,Florida,Unknown,False,1742.01
+9752695,KHST,"Esperanza, Vieques Island",Homestead Air Force Base,"Esperanza, Vieques Island (9752695)",18.09386,-65.47136,Florida,Unknown,False,1742.82
+9753216,KHST,Fajardo,Homestead Air Force Base,Fajardo (9753216),18.335278,-65.63111,Florida,Unknown,False,1714.67
+9754229,KHST,Yabucoa Harbor,Homestead Air Force Base,Yabucoa Harbor (9754229),18.055084,-65.833,Florida,Unknown,False,1712.29
+9755371,KHST,"San Juan, La Puntilla, San Juan Bay",Homestead Air Force Base,"San Juan, La Puntilla, San Juan Bay (9755371)",18.458944,-66.11642,Florida,Unknown,False,1663.53
+9755968,KHST,"Salinas, Bahia de Jobos",Homestead Air Force Base,"Salinas, Bahia de Jobos (9755968)",17.949083,-66.225945,Florida,Unknown,False,1683.2
+9757811,KHST,Arecibo,Homestead Air Force Base,Arecibo (9757811),18.480528,-66.70236,Florida,Unknown,False,1609.28
+9758066,KHST,"Guayanilla, Bahia de Guayanilla",Homestead Air Force Base,"Guayanilla, Bahia de Guayanilla (9758066)",18.005861,-66.76661,Florida,Unknown,False,1631.64
+9759110,KHST,Magueyes Island,Homestead Air Force Base,Magueyes Island (9759110),17.970112,-67.04639,Florida,Unknown,False,1609.08
+9759394,KHST,Mayaguez,Homestead Air Force Base,Mayaguez (9759394),18.218834,-67.162445,Florida,Unknown,False,1583.65
+9759413,KHST,"Aguadilla, Crashboat Beach",Homestead Air Force Base,"Aguadilla, Crashboat Beach (9759413)",18.456638,-67.16458,Florida,Unknown,False,1569.23
+9759938,KHST,Mona Island,Homestead Air Force Base,Mona Island (9759938),18.089289,-67.93821,Florida,Unknown,False,1523.63
