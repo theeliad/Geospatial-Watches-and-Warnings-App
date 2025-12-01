@@ -1,41 +1,52 @@
-a# stations_df_func.py
+# stations_df_func.py
 
 import pandas as pd
-import noaa_coops as nc
+from pathlib import Path
 import logging
-import os
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+
+# This is the single source of truth for station metadata.
+MASTER_STATIONS_FILE = "master_coastal_stations.csv"
 
 
-def get_stations_df() -> pd.DataFrame:
+def get_stations_df():
     """
-    Tries to fetch the latest NOAA station list. If it fails, it loads a
-    fallback list from a local CSV file.
+    Loads and normalizes the master station list from the pre-generated CSV.
     """
-    # First, try the live API call
-    try:
-        logging.info("Attempting to fetch live station metadata from NOAA...")
-        stations = nc.get_stations(product='water_level', active=True)
-        if stations:
-            station_data = [{
-                "station_id": s.id, "station_name": s.name, "state": s.state,
-                "latitude": s.lat, "longitude": s.lon, "station_type": s.station_type,
-            } for s in stations]
-            df = pd.DataFrame(station_data)
-            logging.info(f"Successfully fetched {len(df)} live stations.")
-            return df
-    except Exception as e:
-        logging.warning(f"Live NOAA station fetch failed: {e}. Attempting to load from local fallback.")
+    logging.info(f"Loading master station list from '{MASTER_STATIONS_FILE}'...")
+    master_path = Path(MASTER_STATIONS_FILE)
 
-    # If the live call fails, use the local fallback file
-    fallback_path = os.path.join('data', 'noaa_stations.csv')
+    if not master_path.is_file():
+        logging.error(f"❌ Master stations file not found: {MASTER_STATIONS_FILE}")
+        logging.error("Please run create_master_station_list.py first to generate this file.")
+        return pd.DataFrame()
+
     try:
-        logging.info(f"Loading station metadata from fallback file: {fallback_path}")
-        if not os.path.exists(fallback_path):
-            logging.error(f"Fallback file not found at {fallback_path}")
+        df = pd.read_csv(master_path, dtype={'noaa_station_id': str, 'nws_station_id': str})
+
+        if df.empty:
+            logging.error(f"❌ Master stations file '{MASTER_STATIONS_FILE}' is empty.")
             return pd.DataFrame()
-        df = pd.read_csv(fallback_path)
-        logging.info(f"Successfully loaded {len(df)} stations from fallback CSV.")
+
+        # --- NORMALIZE COLUMN NAMES for consistent use in the app ---
+        # The app will internally use 'station_id', 'latitude', and 'longitude'.
+        df.rename(columns={
+            'noaa_station_id': 'station_id',
+            'noaa_station_name': 'station_name',
+            'lat': 'latitude',
+            'lon': 'longitude'
+        }, inplace=True)
+
+        # Ensure the essential columns exist after renaming
+        required_cols = ['station_id', 'station_name', 'latitude', 'longitude', 'display_name']
+        if not all(col in df.columns for col in required_cols):
+            missing = [col for col in required_cols if col not in df.columns]
+            raise ValueError(f"Master CSV is missing required columns after renaming: {missing}")
+
+        logging.info(f"✅ Loaded and normalized {len(df)} stations.")
         return df
+
     except Exception as e:
-        logging.error(f"Failed to load fallback station data: {e}")
+        logging.error(f"❌ Error loading or processing master stations file: {e}")
         return pd.DataFrame()
