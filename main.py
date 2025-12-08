@@ -266,7 +266,7 @@ st.markdown("---")
 st.markdown("""
     ### 📚 About This Application
 
-    This application provides 24-hour coastal flood forecasting using:
+    This application provides an hour-by-hour coastal flood forecasting using:
     - **NOAA CO-OPS** historical water level data
     - **LSTM Neural Network** for time-series prediction
     - **NWS API** for precipitation forecasts
