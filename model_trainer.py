@@ -13,134 +13,134 @@ import joblib
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 
-# -----------------------------------------------------
-# STREAMLIT TRAINING PROGRESS CALLBACK
-# -----------------------------------------------------
+# --- CUSTOM KERAS CALLBACK ---
 class StreamlitCallback(Callback):
-    """Updates Streamlit progress bar each epoch."""
-
     def __init__(self, progress_bar, total_epochs):
         super().__init__()
         self.progress_bar = progress_bar
         self.total_epochs = total_epochs
 
     def on_epoch_end(self, epoch, logs=None):
-        if logs is None:
-            logs = {}
-        pct = (epoch + 1) / self.total_epochs
-        loss = logs.get("loss", 0)
+        logs = logs or {}
+        percent_complete = (epoch + 1) / self.total_epochs
+        val_loss = logs.get('val_loss', 0)
         self.progress_bar.progress(
-            pct,
-            text=f"Epoch {epoch+1}/{self.total_epochs} – Loss: {loss:.4f}"
+            percent_complete,
+            text=f"Training Epoch {epoch + 1}/{self.total_epochs} – Validation Loss: {val_loss:.4f}"
         )
 
 
-# -----------------------------------------------------
-# LSTM SEQUENCING
-# -----------------------------------------------------
+# --- HELPER FUNCTION ---
 def create_lstm_sequences(data, seq_len):
     X, y = [], []
     for i in range(len(data) - seq_len):
-        X.append(data[i:i+seq_len])
-        y.append(data[i+seq_len])
+        X.append(data[i: i + seq_len])
+        y.append(data[i + seq_len])
     return np.array(X), np.array(y)
 
 
-# -----------------------------------------------------
-# LSTM MODEL TRAINING
-# -----------------------------------------------------
+# --- MAIN TRAINING FUNCTION ---
 def train_model(
-    station_id: str,
-    seq_len: int = 72,
-    epochs: int = 10,
-    batch_size: int = 64,
-    progress_bar=None
+        station_id: str,
+        years: int = 1,
+        seq_len: int = 72,
+        epochs: int = 10,
+        batch_size: int = 64,
+        progress_bar=None
 ):
     """
-    Train LSTM model on historical water-level data.
-    Compatible with current main.py structure.
+    Trains a univariate LSTM model to predict future water levels.
     """
 
-    # ------------ Load Cached Data ------------
+    # ============================================================
+    # CHANGE 1: FLEXIBLE FILE SEARCH (from old version)
+    # ============================================================
     file_dir = "data/historical"
     file_candidates = [
+        f"{file_dir}/{station_id}_historical_{years}y.csv",
         f"{file_dir}/{station_id}_historical_1y.csv",
         f"{file_dir}/{station_id}_historical_5y.csv",
         f"{file_dir}/{station_id}_historical.csv"
     ]
 
     df = None
-    for f in file_candidates:
-        if os.path.exists(f):
-            df = pd.read_csv(f, parse_dates=["date_time"], index_col="date_time")
+    for file_path in file_candidates:
+        if os.path.exists(file_path):
+            df = pd.read_csv(file_path, parse_dates=['date_time'], index_col='date_time')
+            logging.info(f"✅ Found historical data: {file_path}")
             break
 
     if df is None:
         raise FileNotFoundError(
-            f"No historical data is loaded for station {station_id}. Step 1 must be run first."
+            f"No historical data found for station {station_id}. Please load data first (Step 1)."
         )
 
     if "water_level" not in df.columns:
         raise ValueError("Historical dataset missing 'water_level' column.")
 
     df = df[["water_level"]].dropna()
+    if df.empty:
+        raise ValueError("Data is empty after cleaning.")
 
-    # ------------ Scale Data ------------
-    scaler = MinMaxScaler()
+    # Scale data
+    scaler = MinMaxScaler(feature_range=(0, 1))
     scaled_data = scaler.fit_transform(df)
 
+    # Create sequences and split data
     X, y = create_lstm_sequences(scaled_data, seq_len)
-    if len(X) < 200:
-        raise ValueError("Not enough data to train LSTM.")
+    if len(X) < 100:
+        raise ValueError("Not enough data to create training/test sets.")
 
-    train_cut = int(len(X) * 0.8)
-    X_train, X_test = X[:train_cut], X[train_cut:]
-    y_train, y_test = y[:train_cut], y[train_cut:]
+    train_size = int(len(X) * 0.8)
+    X_train, X_test = X[:train_size], X[train_size:]
+    y_train, y_test = y[:train_size], y[train_size:]
 
-    # ------------ Build LSTM Model ------------
+    logging.info(f"Training LSTM with {X_train.shape} sequences.")
+
+    # Build the model
     model = Sequential([
-        LSTM(64, return_sequences=True, input_shape=(seq_len, 1)),
+        LSTM(50, return_sequences=True, input_shape=(seq_len, 1)),
         Dropout(0.2),
-        LSTM(64, return_sequences=False),
+        LSTM(50, return_sequences=False),
         Dropout(0.2),
-        Dense(32, activation="relu"),
+        Dense(25, activation='relu'),
         Dense(1)
     ])
+    model.compile(optimizer='adam', loss='mean_squared_error')
 
-    model.compile(optimizer="adam", loss="mse")
-
-    # ------------ Callbacks ------------
+    # Define callbacks
     model_dir = "models"
     os.makedirs(model_dir, exist_ok=True)
 
-    # ✅ CHANGED: Use .keras extension instead of .h5
+    # ============================================================
+    # CHANGE 3: USE .keras EXTENSION CONSISTENTLY
+    # ============================================================
     model_path = f"{model_dir}/{station_id}_waterlevel_lstm.keras"
 
-    callbacks = [
-        EarlyStopping(monitor="val_loss", patience=3, restore_best_weights=True),
-        ModelCheckpoint(model_path, save_best_only=True, monitor="val_loss")
-    ]
+    early_stop = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
+    checkpoint = ModelCheckpoint(model_path, save_best_only=True, monitor='val_loss', mode='min')
 
-    # ADD STREAMLIT CALLBACK
-    if progress_bar is not None:
-        callbacks.append(StreamlitCallback(progress_bar, epochs))
+    callbacks_list = [early_stop, checkpoint]
+    if progress_bar:
+        callbacks_list.append(StreamlitCallback(progress_bar, epochs))
 
-    # ------------ Train ------------
+    # Train the model
     model.fit(
-        X_train,
-        y_train,
+        X_train, y_train,
         validation_data=(X_test, y_test),
         epochs=epochs,
         batch_size=batch_size,
-        callbacks=callbacks,
-        verbose=0  # must be silent so Streamlit handles UI
+        callbacks=callbacks_list,
+        verbose=0
     )
 
-    # ------------ Save Scaler ------------
+    logging.info(f"Best LSTM model saved to {model_path}")
+
+    # ============================================================
+    # CHANGE 2: SAVE SCALER AFTER TRAINING (from old version)
+    # ============================================================
     scaler_path = f"{model_dir}/{station_id}_waterlevel_scaler.pkl"
     joblib.dump(scaler, scaler_path)
-
-    logging.info(f"✅ LSTM model saved: {model_path}")
-    logging.info(f"✅ Scaler saved: {scaler_path}")
+    logging.info(f"Scaler saved to {scaler_path}")
 
     return model_path
