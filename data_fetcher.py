@@ -1,185 +1,235 @@
 # data_fetcher.py
 
+import logging
 import pandas as pd
 import noaa_coops as nc
-import logging
-from datetime import datetime, timedelta
+from datetime import datetime
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-# Flood level thresholds by station (fallback if API doesn't provide)
-FLOOD_LEVELS = {
-    '8443970': {'Major': 14.0, 'Moderate': 13.0, 'Minor': 12.0},  # Boston, MA
-    '8452660': {'Major': 8.5, 'Moderate': 6.5, 'Minor': 5.5},  # Newport, RI
-}
 
+# ----------------------------------------------------
+# NOAA HISTORICAL WATER LEVEL FETCHER
+# ----------------------------------------------------
+def fetch_noaa_water(station_id: str, start_date: str, end_date: str):
+    """Fetch and normalize NOAA CO-OPS water-level data."""
 
-def get_flood_levels_from_noaa(station_id: str, datum='MLLW') -> dict:
-    """
-    Retrieves official flood level thresholds from NOAA.
-    Falls back to FLOOD_LEVELS dict if API doesn't have data.
+    logging.info(f"🌊 Fetching NOAA water levels: station={station_id}, {start_date} → {end_date}")
 
-    Args:
-        station_id: NOAA station ID
-        datum: Datum reference (default: MLLW)
-
-    Returns:
-        dict with keys: Major, Moderate, Minor (flood levels in feet)
-    """
     try:
-        logging.info(f"🔍 Fetching flood levels for station {station_id}...")
-        station = nc.Station(station_id)
-        flood_data = station.floodlevels
-
-        if not flood_data:
-            logging.warning(f"⚠️ No flood data object returned for {station_id}")
-            return FLOOD_LEVELS.get(station_id, {})
-
-        if 'floodlevel' not in flood_data:
-            logging.warning(f"⚠️ 'floodlevel' key not found in flood data for {station_id}")
-            return FLOOD_LEVELS.get(station_id, {})
-
-        for level_set in flood_data['floodlevel']:
-            if level_set.get('datum') == datum:
-                levels = {
-                    'Major': float(level_set.get('major', 999)),
-                    'Moderate': float(level_set.get('moderate', 999)),
-                    'Minor': float(level_set.get('minor', 999))
-                }
-                logging.info(f"✅ Found flood levels for {station_id}: {levels}")
-                return levels
-
-        logging.warning(f"⚠️ No flood levels found for datum {datum} at {station_id}")
-        return FLOOD_LEVELS.get(station_id, {})
-
-    except Exception as e:
-        logging.warning(f"❌ Could not fetch flood levels for {station_id}: {e}")
-        return FLOOD_LEVELS.get(station_id, {})
-
-
-def get_tide_data(station_id: str, start_date: str, end_date: str) -> pd.DataFrame:
-    """
-    Fetches, cleans, and resamples hourly water-level data from NOAA.
-
-    Args:
-        station_id: NOAA station ID
-        start_date: Start date in format YYYYMMDD
-        end_date: End date in format YYYYMMDD
-
-    Returns:
-        DataFrame with datetime index and 'water_level' column
-    """
-    try:
-        logging.info(f"🌊 Fetching water level data for station {station_id}: {start_date} → {end_date}")
-
-        station = nc.Station(station_id)
-        df = station.get_data(
+        coops = nc.Station(station_id)
+        df = coops.get_data(
             begin_date=start_date,
             end_date=end_date,
             product="water_level",
-            datum="MLLW",
-            units="english",
-            time_zone="lst_ldt"
+            datum="MLLW",  # Mean Lower Low Water (standard for US coastal stations)
+            units="english",  # Feet (not meters)
+            time_zone="lst_ldt"  # Local Standard/Daylight Time (valid timezone)
         )
-
-        if df.empty or "water_level" not in df.columns:
-            logging.warning(f"⚠️ No valid water-level data for {station_id}.")
-            return pd.DataFrame()
-
-        # Keep only water_level column
-        df = df[["water_level"]]
-        df.index = pd.to_datetime(df.index)
-
-        # Convert to hourly, clean interpolation
-        df = df.resample("H").mean()
-        df["water_level"] = df["water_level"].interpolate(method="time")
-        df.dropna(inplace=True)
-
-        logging.info(f"✅ Retrieved {len(df)} hours of water level data")
-
-        return df
-
     except Exception as e:
-        logging.error(f"❌ Error loading tide data for {station_id}: {e}")
-        import traceback
-        logging.error(traceback.format_exc())
-        return pd.DataFrame()
+        logging.error(f"❌ NOAA request failed: {e}")
+        return None
+
+    if df is None or df.empty:
+        logging.error("❌ NOAA returned an empty dataframe.")
+        return None
+
+    # ----------------------------------------------------
+    # FLEXIBLE COLUMN DETECTION (handles version differences)
+    # ----------------------------------------------------
+
+    # The noaa_coops library returns data with index as datetime
+    # and columns that may vary by version
+
+    # Reset index to make datetime a column
+    df = df.reset_index()
+
+    time_col = None
+    value_col = None
+
+    # Check for time column
+    for col in ['date_time', 't', 'time', 'datetime', 'index']:
+        if col in df.columns:
+            time_col = col
+            break
+
+    # Check for value column
+    for col in ['water_level', 'v', 'value', 'water level']:
+        if col in df.columns:
+            value_col = col
+            break
+
+    if time_col is None or value_col is None:
+        logging.error(f"❌ NOAA response missing expected columns. Found: {df.columns.tolist()}")
+        return None
+
+    # Rename to standard names
+    df = df.rename(columns={time_col: "date_time", value_col: "water_level"})
+
+    df["date_time"] = pd.to_datetime(df["date_time"], errors="coerce")
+    df["water_level"] = pd.to_numeric(df["water_level"], errors="coerce")
+
+    df = df.dropna(subset=["date_time", "water_level"])
+
+    if df.empty:
+        logging.error("❌ After cleaning NOAA data, no valid water levels remain.")
+        return None
+
+    return df[["date_time", "water_level"]]
 
 
-def check_station_has_live_data(station_id: str) -> bool:
+# ----------------------------------------------------
+# GET STATION METADATA (NEW FUNCTION)
+# ----------------------------------------------------
+def get_station_metadata(station_id: str) -> dict:
     """
-    Checks if a station has recent live data available (within last 24 hours).
-
-    Args:
-        station_id: NOAA station ID
+    Fetch comprehensive station metadata including elevation and flood thresholds.
 
     Returns:
-        True if station has recent data, False otherwise
+        dict with keys: station_id, elevation_ft, datum, flood_thresholds, metadata_available
     """
     try:
-        end_date = datetime.now()
-        start_date = end_date - timedelta(hours=24)
+        coops = nc.Station(station_id)
+        meta = coops.metadata
 
-        df = get_tide_data(
-            station_id,
-            start_date=start_date.strftime("%Y%m%d"),
-            end_date=end_date.strftime("%Y%m%d")
-        )
+        metadata = {
+            'station_id': station_id,
+            'elevation_ft': None,
+            'datum': None,
+            'flood_thresholds': None,
+            'metadata_available': False
+        }
 
-        if df.empty:
-            logging.warning(f"⚠️ Station {station_id} has no recent live data")
-            return False
+        if meta:
+            metadata['metadata_available'] = True
 
-        # Check if data is recent (within last 6 hours)
-        df_recent = df[df.index > (end_date - timedelta(hours=6))]
+            # Extract elevation (various possible keys)
+            for key in ['elevation', 'met_site_elevation', 'height', 'sensor_elevation']:
+                if key in meta:
+                    try:
+                        metadata['elevation_ft'] = float(meta[key])
+                        logging.info(f"📏 Station {station_id} elevation: {metadata['elevation_ft']:.2f} ft")
+                        break
+                    except (ValueError, TypeError):
+                        continue
 
-        if df_recent.empty:
-            logging.warning(f"⚠️ Station {station_id} data is stale (older than 6 hours)")
-            return False
+            # Check for datum
+            if 'datum' in meta:
+                metadata['datum'] = meta['datum']
 
-        logging.info(f"✅ Station {station_id} has recent live data")
-        return True
+            # Check for flood levels
+            if 'flood_levels' in meta:
+                metadata['flood_thresholds'] = meta['flood_levels']
+                logging.info(f"🌊 Station {station_id} has NOAA flood thresholds")
+
+        return metadata
 
     except Exception as e:
-        logging.error(f"❌ Error checking station {station_id}: {e}")
-        return False
+        logging.error(f"❌ Error fetching station metadata for {station_id}: {e}")
+        return {
+            'station_id': station_id,
+            'elevation_ft': None,
+            'datum': None,
+            'flood_thresholds': None,
+            'metadata_available': False
+        }
 
 
-def classify_flood_risk(df: pd.DataFrame, flood_levels: dict) -> pd.DataFrame:
+# ----------------------------------------------------
+# NOAA FLOOD THRESHOLDS (TWO-TIER APPROACH)
+# ----------------------------------------------------
+def get_flood_levels_from_noaa(station_id: str) -> dict:
     """
-    Assigns flood-risk level (Major, Moderate, Minor, No Flood) based on thresholds.
+    Get flood thresholds using two-tier approach:
+    1. Try NOAA metadata first (most accurate, station-specific)
+    2. Fall back to statistical calculation from historical data
+
+    NO GENERIC DEFAULTS - Always uses real data.
+
+    Returns:
+        dict with keys: Minor, Moderate, Major, method
+        Returns None if both methods fail
+    """
+
+    # ============================================================
+    # OPTION 1: Try NOAA metadata first (MOST ACCURATE)
+    # ============================================================
+    try:
+        coops = nc.Station(station_id)
+        meta = coops.metadata
+
+        if meta and "flood_levels" in meta:
+            thresholds = meta["flood_levels"]
+            thresholds['method'] = 'noaa_metadata'
+            logging.info(f"✅ Using NOAA official flood thresholds for {station_id}")
+            logging.info(
+                f"   Minor: {thresholds.get('Minor', 'N/A')} ft, Moderate: {thresholds.get('Moderate', 'N/A')} ft, Major: {thresholds.get('Major', 'N/A')} ft")
+            return thresholds
+    except Exception as e:
+        logging.warning(f"⚠️ Could not fetch NOAA metadata: {e}")
+
+    # ============================================================
+    # OPTION 2: Calculate from historical data (FALLBACK)
+    # ============================================================
+    try:
+        # Import here to avoid circular dependency
+        from data_loader import calculate_flood_thresholds_from_data
+
+        thresholds = calculate_flood_thresholds_from_data(station_id)
+        if thresholds:
+            logging.info(f"✅ Using statistically calculated flood thresholds for {station_id}")
+            logging.info(
+                f"   Minor: {thresholds['Minor']:.2f} ft, Moderate: {thresholds['Moderate']:.2f} ft, Major: {thresholds['Major']:.2f} ft")
+            return thresholds
+    except ImportError:
+        logging.error("❌ data_loader module not available for threshold calculation")
+    except Exception as e:
+        logging.warning(f"⚠️ Could not calculate thresholds from historical data: {e}")
+
+    # ============================================================
+    # BOTH METHODS FAILED - Return None
+    # ============================================================
+    logging.error(f"❌ Could not determine flood thresholds for {station_id} using any method.")
+    logging.error(f"   Please ensure historical data is loaded or NOAA metadata is available.")
+    return None
+
+
+# ----------------------------------------------------
+# CLASSIFY FLOOD RISK
+# ----------------------------------------------------
+def classify_flood_risk(df: pd.DataFrame, thresholds: dict) -> pd.DataFrame:
+    """
+    Adds 'risk_level' column based on flood thresholds.
 
     Args:
         df: DataFrame with 'water_level' column
-        flood_levels: dict with Major, Moderate, Minor threshold values
+        thresholds: dict with 'Minor', 'Moderate', 'Major' keys (or None)
 
     Returns:
         DataFrame with added 'risk_level' column
     """
-    if df.empty:
-        logging.warning("⚠️ Cannot classify flood risk: DataFrame is empty")
-        return df
 
-    if not flood_levels or 'Minor' not in flood_levels:
-        logging.warning("⚠️ No valid flood levels provided, setting risk to 'Unknown'")
-        df['risk_level'] = "Unknown"
+    df = df.copy()
+
+    # If no thresholds available, mark as Unknown
+    if thresholds is None:
+        df["risk_level"] = "Unknown (No Thresholds Available)"
+        logging.warning("⚠️ Flood classification unavailable - no thresholds provided")
         return df
 
     def classify(level):
-        if pd.isna(level):
-            return "Unknown"
-        if level >= flood_levels.get('Major', 999):
-            return "Major"
-        if level >= flood_levels.get('Moderate', 999):
-            return "Moderate"
-        if level >= flood_levels.get('Minor', 999):
-            return "Minor"
-        return "No Flood"
+        if "Major" in thresholds and level >= thresholds["Major"]:
+            return "Major Flood"
+        if "Moderate" in thresholds and level >= thresholds["Moderate"]:
+            return "Moderate Flood"
+        if "Minor" in thresholds and level >= thresholds["Minor"]:
+            return "Minor Flood"
+        return "Normal"
 
     df["risk_level"] = df["water_level"].apply(classify)
 
-    # Log distribution of risk levels
-    risk_counts = df['risk_level'].value_counts()
-    logging.info(f"📊 Risk level distribution: {risk_counts.to_dict()}")
+    # Add threshold method info if available
+    if 'method' in thresholds:
+        logging.info(f"📊 Flood classification using '{thresholds['method']}' thresholds")
 
     return df
