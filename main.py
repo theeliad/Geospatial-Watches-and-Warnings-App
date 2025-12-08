@@ -50,7 +50,7 @@ def cached_get_stations_df():
 # --------------------------
 # Page Title & Initial Load
 # --------------------------
-st.title("🌊 Geospatial Watches & Warnings Web-App")
+st.title("🌊 Geospatial Flood Warnings and Watches Web-App")
 st.markdown("NOAA historical water-level data, train an LSTM model, & run a live water-level forecast for flood risk.")
 
 stations_df = cached_get_stations_df()
