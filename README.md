@@ -1,7 +1,8 @@
 #  Geospatial Flood Watches and Weather Web Application
- This is a Climatebase Capstone Project
-
 This project presents a comprehensive web application for predicting coastal flood risk using machine learning models and NOAA data. The application is built using Python tools such as Streamlit, LSTM model, NOAA API, NWS API, Folium, and Matplotlib.
+
+This is a Climatebase Capstone Project
+
 
 # Project Overview
 
