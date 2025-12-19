@@ -1,4 +1,4 @@
-# About Me: Geospatial Flood Watches and Weather Web Application
+#  Geospatial Flood Watches and Weather Web Application
  This is a Climatebase Capstone Project
 
 This project presents a comprehensive web application for predicting coastal flood risk using machine learning models and NOAA data. The application is built using Python tools such as Streamlit, LSTM model, NOAA API, NWS API, Folium, and Matplotlib.
@@ -72,10 +72,51 @@ Loads the historical data from Step 1.
 Saves the trained model to models/<station>_flood_model.pkl.
 
 3.  Live Prediction
-    *   Uses predictor.run_live_prediction() to make live predictions.
-    *   Loads the trained model from Step 2.
-    *   Loads live single-timestamp placeholder observation.
-    *   Predicts flood probability.
+Uses predictor.run_live_prediction() to make live predictions.
+Loads the trained model from Step 2.
+Loads live single-timestamp placeholder observation.
+Predicts flood probability.
+
+______________________________________________________________________________
+
+# Machine Learning Model:
+
+LSTM Machine Learning (Official)
+
+The official version uses an LSTM (Long Short-Term Memory) machine learning model to predict the water level at a given time. The model is trained on historical data such as water level, precipitation, temperature, and wind speed. The model is designed to answer "What will the water level be at 3:00 PM?" and is well-suited for this task due to its ability to capture long-term dependencies in the data.
+
+The LSTM machine learning model used in the official version is a type of recurrent neural network (RNN) that is particularly well-suited for time series forecasting tasks. The model is trained on a sequence of data points and makes predictions based on the patterns and relationships it has learned from the data.
+
+The LSTM model is particularly well-suited for this task because it can capture long-term dependencies in the data and is robust to noise and variability. The model is also relatively fast to train and can handle large datasets.
+
+Model Trainer (LSTM)
+
+The model_trainer.py module contains the train_model() function, which trains an LSTM model to predict the water level at a given time. The function takes in the station ID, sequence length, epochs, batch size, and progress bar as inputs. It loads the historical data, scales the data, creates sequences, trains the model, and saves the trained model and scaler to disk.
+
+Predictor (LSTM)
+
+The predictor.py module contains the run_live_prediction() function, which takes in the station ID, sequence length, and live data as inputs. It loads the trained model, scales the live data, makes predictions, and returns the predicted water level and flood risk.
+
+Accuracy Comparison
+
+For predicting "What will the water level be at 3:00 PM?", the LSTM model will be more accurate due to its ability to capture long-term dependencies in the data.
+
+NOAA Live Data Fetcher and Loader 
+
+The data_fetcher.py module contains the load_noaa_live() function, which fetches the latest NOAA live measurements for a given station. The function takes in the station ID and sequence length as inputs and returns the live data.
+
+The data_loader.py module contains the load_noaa_historical() function, which fetches historical data from NOAA for a given station. The function takes in the station ID and lookback days as inputs and returns the historical data.
+
+Plotting Function 
+
+The plot_results() function is used to plot the actual vs. predicted water levels for visual inspection. The function takes in the actual and predicted water levels as inputs and plots them using matplotlib.
+
+# Data Sources
+
+The project uses two data sources:
+
+NOAA API: For fetching historical and live data.
+NWS API: For fetching precipitation forecasts.
 
 # 🌊 Comprehensive Web Application Architecture & Workflow
 ---
@@ -244,44 +285,8 @@ main.py
        │        │   • else → 0.0 ft
        │        │
        │        └─ Returns: {
-       │              '
+       │              
+---
 
+---
 
-# Machine Learning Model:
-
-LSTM Machine Learning (Official)
-
-The official version uses an LSTM (Long Short-Term Memory) machine learning model to predict the water level at a given time. The model is trained on historical data such as water level, precipitation, temperature, and wind speed. The model is designed to answer "What will the water level be at 3:00 PM?" and is well-suited for this task due to its ability to capture long-term dependencies in the data.
-
-The LSTM machine learning model used in the official version is a type of recurrent neural network (RNN) that is particularly well-suited for time series forecasting tasks. The model is trained on a sequence of data points and makes predictions based on the patterns and relationships it has learned from the data.
-
-The LSTM model is particularly well-suited for this task because it can capture long-term dependencies in the data and is robust to noise and variability. The model is also relatively fast to train and can handle large datasets.
-
-Model Trainer (LSTM)
-
-The model_trainer.py module contains the train_model() function, which trains an LSTM model to predict the water level at a given time. The function takes in the station ID, sequence length, epochs, batch size, and progress bar as inputs. It loads the historical data, scales the data, creates sequences, trains the model, and saves the trained model and scaler to disk.
-
-Predictor (LSTM)
-
-The predictor.py module contains the run_live_prediction() function, which takes in the station ID, sequence length, and live data as inputs. It loads the trained model, scales the live data, makes predictions, and returns the predicted water level and flood risk.
-
-Accuracy Comparison
-
-For predicting "What will the water level be at 3:00 PM?", the LSTM model will be more accurate due to its ability to capture long-term dependencies in the data.
-
-NOAA Live Data Fetcher and Loader 
-
-The data_fetcher.py module contains the load_noaa_live() function, which fetches the latest NOAA live measurements for a given station. The function takes in the station ID and sequence length as inputs and returns the live data.
-
-The data_loader.py module contains the load_noaa_historical() function, which fetches historical data from NOAA for a given station. The function takes in the station ID and lookback days as inputs and returns the historical data.
-
-Plotting Function 
-
-The plot_results() function is used to plot the actual vs. predicted water levels for visual inspection. The function takes in the actual and predicted water levels as inputs and plots them using matplotlib.
-
-# Data Sources
-
-The project uses two data sources:
-
-NOAA API: For fetching historical and live data.
-NWS API: For fetching precipitation forecasts.
