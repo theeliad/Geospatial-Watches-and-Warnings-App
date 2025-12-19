@@ -42,6 +42,9 @@ ______________________________________________________________________________
 main.py
 UI, user flow, orchestration of all steps
 
+stations_df_func.py
+Loads station metadata used in dropdowns & maps
+
 data_fetcher.py
 Retrieve NOAA water-level data + flood thresholds + risk classification
 
@@ -56,9 +59,6 @@ Loads trained model & runs live prediction
 
 nws_fetcher.py
 Fetches NWS precipitation forecast & calculates impacts
-
-stations_df_func.py
-Loads station metadata used in dropdowns & maps
 
 ______________________________________________________________________________
 
